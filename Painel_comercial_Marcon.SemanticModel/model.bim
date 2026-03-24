@@ -1458,32 +1458,6 @@
                   }
                 ]
               },
-              "entity__medida.cobertura": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Medidas",
-                    "ConceptualProperty": "Positivados"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "cobertura": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Positivado": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
               "entity__medida.cobertura_a_a": {
                 "Definition": {
                   "Binding": {
@@ -1772,6 +1746,25 @@
                     }
                   }
                 ]
+              },
+              "entity__medida.entity___positivado_vs_total_de_clientes_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "_% Positivado vs Total de clientes FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_% positivado vs total de clientes FormatString": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "entity__medida.entity__devolucao_vs_faturamento": {
                 "Definition": {
@@ -2071,6 +2064,158 @@
                     "% positivado vs total de clientes": {
                       "State": "Generated"
                     }
+                  },
+                  {
+                    "%": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "entity__medida.positivados": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Positivados"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "positivados": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Positivado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "entity__medida.positivados_text": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "* Positivados Text"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "* positivados text": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "* positivado manuscript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "* positivado transcript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "* positivado typescript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "* positivado edition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "* positivado version": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "* positivado writing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "* positivado script": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "* positivado copy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "* positivado schoolbook": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "* positivado reader": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
                   }
                 ]
               },
@@ -2218,6 +2363,138 @@
                       },
                       "State": "Suggested",
                       "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "entity__medida.s_positivados_text": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "* S Positivados Text"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "* s positivados text": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "* s positivado manuscript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "* s positivado transcript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "* s positivado typescript": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "* s positivado edition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "* s positivado version": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "* s positivado writing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "* s positivado script": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "* s positivado copy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "* s positivado schoolbook": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.489
+                    }
+                  },
+                  {
+                    "* s positivado reader": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.489
+                    }
+                  }
+                ]
+              },
+              "entity__medida.sem_positivacao": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Sem Positivacao"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sem positivacao": {
+                      "State": "Generated"
                     }
                   }
                 ]
@@ -7681,6 +7958,72 @@
                 },
                 "State": "Generated"
               },
+              "meg_excel_campanha_has_entity__medida_s_positivados_text": {
+                "Binding": {
+                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.s_positivados_text"
+                      },
+                      "Subject": {
+                        "Role": "meg_excel_campanha"
+                      }
+                    },
+                    "ID": "meg_excel_campanha_have__s_positivados_text",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.s_positivados_text": {
+                    "Target": {
+                      "Entity": "entity__medida.s_positivados_text"
+                    }
+                  },
+                  "meg_excel_campanha": {
+                    "Target": {
+                      "Entity": "meg_excel_campanha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "meg_excel_campanha_has_entity__medida_sem_positivacao": {
+                "Binding": {
+                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.sem_positivacao"
+                      },
+                      "Subject": {
+                        "Role": "meg_excel_campanha"
+                      }
+                    },
+                    "ID": "meg_excel_campanha_have_sem_positivacao",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.sem_positivacao": {
+                    "Target": {
+                      "Entity": "entity__medida.sem_positivacao"
+                    }
+                  },
+                  "meg_excel_campanha": {
+                    "Target": {
+                      "Entity": "meg_excel_campanha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "meg_excel_campanha_has_entity__medida_tend": {
                 "Binding": {
                   "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
@@ -9316,6 +9659,52 @@
                 },
                 "State": "Generated"
               },
+              "senha_representante_has_ID": {
+                "Binding": {
+                  "ConceptualEntity": "Senha Representante"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "senha_representante.ID"
+                      },
+                      "Subject": {
+                        "Role": "senha_representante"
+                      }
+                    },
+                    "ID": "senha_representantes_have_ID",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "ID_are_names_IDs_of_senha_representantes",
+                    "Name": {
+                      "Name": {
+                        "Role": "senha_representante.ID"
+                      },
+                      "Subject": {
+                        "Role": "senha_representante"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "senha_representante": {
+                    "Target": {
+                      "Entity": "senha_representante"
+                    }
+                  },
+                  "senha_representante.ID": {
+                    "Target": {
+                      "Entity": "senha_representante.ID"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "senha_representante_has_d_rep": {
                 "Binding": {
                   "ConceptualEntity": "Senha Representante"
@@ -9443,52 +9832,6 @@
                   "senha_representante": {
                     "Target": {
                       "Entity": "senha_representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_is_named_ID": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "ID_are_names_IDs_of_senha_representantes",
-                    "Name": {
-                      "Name": {
-                        "Role": "senha_representante.ID"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha_representante.ID"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_ID",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  },
-                  "senha_representante.ID": {
-                    "Target": {
-                      "Entity": "senha_representante.ID"
                     }
                   }
                 },
@@ -9715,39 +10058,6 @@
                   "entity__medida.atendidos": {
                     "Target": {
                       "Entity": "entity__medida.atendidos"
-                    }
-                  },
-                  "tb_cliente": {
-                    "Target": {
-                      "Entity": "tb_cliente"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "tb_cliente_has_entity__medida_cobertura": {
-                "Binding": {
-                  "ConceptualEntity": "TB_CLIENTE"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "entity__medida.cobertura"
-                      },
-                      "Subject": {
-                        "Role": "tb_cliente"
-                      }
-                    },
-                    "ID": "tb_clientes_have_cobertura",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "entity__medida.cobertura": {
-                    "Target": {
-                      "Entity": "entity__medida.cobertura"
                     }
                   },
                   "tb_cliente": {
@@ -9989,6 +10299,72 @@
                 },
                 "State": "Generated"
               },
+              "tb_cliente_has_entity__medida_positivados": {
+                "Binding": {
+                  "ConceptualEntity": "TB_CLIENTE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.positivados"
+                      },
+                      "Subject": {
+                        "Role": "tb_cliente"
+                      }
+                    },
+                    "ID": "tb_clientes_have_positivados",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.positivados": {
+                    "Target": {
+                      "Entity": "entity__medida.positivados"
+                    }
+                  },
+                  "tb_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "tb_cliente_has_entity__medida_positivados_text": {
+                "Binding": {
+                  "ConceptualEntity": "TB_CLIENTE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.positivados_text"
+                      },
+                      "Subject": {
+                        "Role": "tb_cliente"
+                      }
+                    },
+                    "ID": "tb_clientes_have__positivados_text",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.positivados_text": {
+                    "Target": {
+                      "Entity": "entity__medida.positivados_text"
+                    }
+                  },
+                  "tb_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "tb_cliente_has_entity__medida_s_atendimento": {
                 "Binding": {
                   "ConceptualEntity": "TB_CLIENTE"
@@ -10012,6 +10388,72 @@
                   "entity__medida.s_atendimento": {
                     "Target": {
                       "Entity": "entity__medida.s_atendimento"
+                    }
+                  },
+                  "tb_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "tb_cliente_has_entity__medida_s_positivados_text": {
+                "Binding": {
+                  "ConceptualEntity": "TB_CLIENTE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.s_positivados_text"
+                      },
+                      "Subject": {
+                        "Role": "tb_cliente"
+                      }
+                    },
+                    "ID": "tb_clientes_have__s_positivados_text",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.s_positivados_text": {
+                    "Target": {
+                      "Entity": "entity__medida.s_positivados_text"
+                    }
+                  },
+                  "tb_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "tb_cliente_has_entity__medida_sem_positivacao": {
+                "Binding": {
+                  "ConceptualEntity": "TB_CLIENTE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.sem_positivacao"
+                      },
+                      "Subject": {
+                        "Role": "tb_cliente"
+                      }
+                    },
+                    "ID": "tb_clientes_have_sem_positivacao",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.sem_positivacao": {
+                    "Target": {
+                      "Entity": "entity__medida.sem_positivacao"
                     }
                   },
                   "tb_cliente": {
@@ -10432,7 +10874,7 @@
                         "Role": "tb_cliente"
                       }
                     },
-                    "ID": "tb_clientes_have_rotas",
+                    "ID": "tb_clientes_have_rotas1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10465,7 +10907,7 @@
                         "Role": "tb_cliente"
                       }
                     },
-                    "ID": "tb_clientes_have_rotas1",
+                    "ID": "tb_clientes_have_rotas",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10847,24 +11289,11 @@
                 },
                 "State": "Generated"
               },
-              "x_param_is_named_x_param": {
+              "x_param_has_x_param": {
                 "Binding": {
                   "ConceptualEntity": "xParam"
                 },
                 "Phrasings": [
-                  {
-                    "ID": "x_params_are_names_IDs_of_x_params",
-                    "Name": {
-                      "Name": {
-                        "Role": "x_param.x_param"
-                      },
-                      "Subject": {
-                        "Role": "x_param"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
                   {
                     "Attribute": {
                       "Object": {
@@ -10875,6 +11304,19 @@
                       }
                     },
                     "ID": "x_params_have_x_params",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "x_params_are_names_IDs_of_x_params",
+                    "Name": {
+                      "Name": {
+                        "Role": "x_param.x_param"
+                      },
+                      "Subject": {
+                        "Role": "x_param"
+                      }
+                    },
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11717,7 +12159,7 @@
               "CALCULATE(",
               "    [Total cliente],",
               "    FILTER(",
-              "        ALL( TB_CLIENTE ),",
+              "        TB_CLIENTE ,",
               "        [TOTAL_FATURADO] > 0)",
               ")"
             ],
@@ -12116,7 +12558,13 @@
             "displayFolder": "COBERTURA",
             "expression": [
               "",
-              "[Total cliente] - [Positivados]"
+              "CALCULATE(",
+              "    [Total cliente],",
+              "    FILTER(",
+              "        TB_CLIENTE ,",
+              "        ISBLANK( [TOTAL_FATURADO] ) ",
+              "        )",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "ddcb88e3-ebe0-4da6-932e-0aee99458c7e"
@@ -12140,6 +12588,29 @@
               "\"( 🔴 \" & FORMAT( vTOTAL, \"0.00%;-0.00%;0.00%\") & \" da Carteira )\""
             ],
             "lineageTag": "6aaca9cd-6bd4-4ff5-91e4-650d6adc2d61"
+          },
+          {
+            "name": "Ultima Venda",
+            "displayFolder": "COBERTURA",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    LASTDATE( MEG_EXCEL_CAMPANHA[Data] ),",
+              "    ALL( 'CALENDARIO DAX' )",
+              ")"
+            ],
+            "formatString": "Short Date",
+            "lineageTag": "56c253db-22bc-47de-a4dd-3364fce4c41f"
+          },
+          {
+            "name": "Dias Sem Compra",
+            "displayFolder": "COBERTURA",
+            "expression": [
+              "",
+              "DATEDIFF( [Ultima Venda] , MAX( 'CALENDARIO DAX'[Date] ) , DAY )"
+            ],
+            "formatString": "0",
+            "lineageTag": "8b061ad4-a4f2-40c5-b84d-c0dc31d22afe"
           }
         ],
         "partitions": [
@@ -13246,6 +13717,16 @@
       },
       {
         "name": "TB_CLIENTE",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "Codigo",
@@ -13549,6 +14030,19 @@
             "lineageTag": "436db931-d2fd-4a80-a40f-e59760246768",
             "sourceColumn": "Obs",
             "summarizeBy": "none"
+          },
+          {
+            "name": "xCliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9c7562fb-d6cb-4039-bc7f-f0b5ca19357a",
+            "sourceColumn": "xCliente",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "3b5464c5-19b0-4872-927f-419e948a9dda",
@@ -13563,9 +14057,10 @@
                 "    Workspaces = Fonte{[Id=\"Workspaces\"]}[Data],",
                 "    #\"6b3d0be9-cdbd-4454-b8dc-62bf05ebb307\" = Workspaces{[workspaceId=\"6b3d0be9-cdbd-4454-b8dc-62bf05ebb307\"]}[Data],",
                 "    #\"74c7e4e3-0e00-4a9e-b0a5-c934ae13e41e\" = #\"6b3d0be9-cdbd-4454-b8dc-62bf05ebb307\"{[dataflowId=\"74c7e4e3-0e00-4a9e-b0a5-c934ae13e41e\"]}[Data],",
-                "    TB_CLIENTE_ = #\"74c7e4e3-0e00-4a9e-b0a5-c934ae13e41e\"{[entity=\"TB_CLIENTE\",version=\"\"]}[Data]",
+                "    TB_CLIENTE_ = #\"74c7e4e3-0e00-4a9e-b0a5-c934ae13e41e\"{[entity=\"TB_CLIENTE\",version=\"\"]}[Data],",
+                "    #\"Coluna Mesclada Inserida\" = Table.AddColumn(TB_CLIENTE_, \"xCliente\", each Text.Combine({Text.From([Codigo], \"pt-BR\"), [Nome]}, \" - \"), type text)",
                 "in",
-                "    TB_CLIENTE_"
+                "    #\"Coluna Mesclada Inserida\""
               ],
               "type": "m"
             }
