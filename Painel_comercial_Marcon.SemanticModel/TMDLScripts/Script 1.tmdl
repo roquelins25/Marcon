@@ -1,0 +1,441 @@
+createOrReplace
+
+	ref table _Medidas
+
+		measure '_Devolucao vs faturamento' =
+				
+				DIVIDE(
+				    [Total devolucao], [TOTAL_FATURADO] , 0)
+			formatString: 0.00%;-0.00%;0.00%
+			lineageTag: c8f4764c-a5e5-4115-95ea-d0fdf7d85c57
+
+		measure '_Devolucao vs faturamento ytd' =
+				
+				DIVIDE(
+				    [YTD Dev], [YTD FATURADO], 0 )
+			formatString: 0.00%;-0.00%;0.00%
+			lineageTag: 1a2ec5cf-04e3-4a9c-abd5-9047dc041d0c
+
+		measure '% M.A' =
+				
+				// Percentual vs mes Anterior
+				DIVIDE( [TOTAL_FATURADO] - [Faturado Mes Anterior], [Faturado Mes Anterior] , 0 )
+			formatString: 0.00%;-0.00%;0.00%
+			displayFolder: COMERCIAL
+			lineageTag: b544a884-6628-4208-94e1-493e51874db5
+
+		measure '% Positivado vs Total de clientes' =
+				
+				DIVIDE( [Cobertura], [Total cliente] , 0 )
+			formatString: 0.00%;-0.00%;0.00%
+			displayFolder: COBERTURA
+			lineageTag: db685a13-5167-4734-8a91-66528d3b9812
+
+		measure '% tendencia vs Ano anterior' =
+				
+				DIVIDE( [TENDENCIA_FATURAMENTO] - [TOTAL_FAT_A.A], [TOTAL_FAT_A.A] , 0 )
+			formatString: 0.00%;-0.00%;0.00%
+			displayFolder: COMERCIAL
+			lineageTag: e571e037-0a5c-4c57-890d-d4c9910a897a
+
+		measure '%A.A' =
+				
+				IF(
+				    ISBLANK([TOTAL_FATURADO]),BLANK(),
+				    DIVIDE([TOTAL_FATURADO] - [TOTAL_FAT_A.A],[TOTAL_FAT_A.A])
+				)
+			formatString: 0.0%;-0.0%;0.0%
+			displayFolder: COMERCIAL
+			lineageTag: 42cf3b4b-b340-483d-8818-68494194aff8
+
+		measure %META =
+				
+				IF(
+				    ISBLANK([TOTAL_FATURADO]),BLANK(),
+				    DIVIDE([TOTAL_FATURADO],[TOTAL_METAS])
+				)
+			formatString: 0.0%;-0.0%;0.0%
+			displayFolder: COMERCIAL
+			lineageTag: 412427c4-b5f1-4d3e-be34-895eb00e2418
+
+		measure %Positivacao =
+				
+				DIVIDE(
+				    [Cobertura],[Meta_Positivacao],BLANK())
+			formatString: 0.00%;-0.00%;0.00%
+			displayFolder: COBERTURA
+			lineageTag: db2a685c-30ec-4b44-a69a-9684258e99b6
+
+		measure %TEND =
+				
+				IF(
+				    ISBLANK([TOTAL_FATURADO]),BLANK(),
+				    DIVIDE([TENDENCIA_FATURAMENTO] -  [TOTAL_METAS] ,[TOTAL_METAS],0)
+				)
+			formatString: 0%;-0%;0%
+			displayFolder: COMERCIAL
+			lineageTag: dcdb5f9c-6b10-4259-b6cb-a7d8b5534bae
+
+		measure Atendidos =
+				
+				CALCULATE(
+				COUNTROWS(
+				    TB_CLIENTE),
+				    FILTER(
+				        TB_CLIENTE,
+				        [TOTAL_FATURADO] > 0))
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: feaa4bd3-a0d4-4298-a8c4-9bfefcfbe509
+
+		measure Cobertura =
+				
+				CALCULATE(
+				    [Total cliente],
+				    FILTER(
+				        TB_CLIENTE,
+				        [TOTAL_FATURADO] > 0)
+				)
+			formatString: 0
+			displayFolder: COBERTURA
+			lineageTag: 8b1f25b3-f4fd-4d70-a57a-8383a233ea3a
+
+		measure 'Cobertura A.A' =
+				
+				CALCULATE(
+				    [Cobertura],
+				    SAMEPERIODLASTYEAR('Calendario DAX'[Date])
+				)
+			formatString: 0
+			displayFolder: COBERTURA
+			lineageTag: 6cba6a5d-57d1-4f58-ad44-c9be602da00b
+
+		measure Comprou =
+				
+				DISTINCTCOUNT(MEG_EXCEL_CAMPANHA[COD_CLIENTE])
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: e9834401-75ba-413b-88c3-1a78d3d8ec3a
+
+		measure 'Cor Texto Calendario' = ```
+				
+				VAR _media = 
+				AVERAGEX(
+				    ALLSELECTED( 'CALENDARIO DAX' ),
+				    [TOTAL_FATURADO] )
+				VAR _MediaAjustada = _media * 1.2
+				RETURN
+				SWITCH(
+				    TRUE(),
+				    [TOTAL_FATURADO] < 0 , "#FF0000",
+				    [TOTAL_FATURADO] < _MediaAjustada, "#000000",
+				    [TOTAL_FATURADO] > _MediaAjustada, "#FFFFFF",
+				    "#000000" )
+				```
+			lineageTag: 8907105f-dbd9-45eb-9ab0-68669463d501
+
+		measure 'DATA MAXIMA' =
+				
+				CALCULATE(
+				LASTDATE(MEG_EXCEL_CAMPANHA[Data]),
+				MEG_EXCEL_CAMPANHA[TOTAL_NOTA_DEVOLUCAO] = 0)
+			formatString: Short Date
+			displayFolder: SEM COMPRAS
+			lineageTag: ed83dfd3-f32e-41db-b8f2-7d33325482e2
+
+		measure DataMaximaCompra =
+				
+				CALCULATE(
+				    MAX(MEG_EXCEL_CAMPANHA[Data]),
+				    FILTER(
+				        ALL('Calendario DAX'),
+				        'Calendario DAX'[Date] < MIN('Calendario DAX'[Date])
+				    )
+				)
+			formatString: General Date
+			displayFolder: SEM COMPRAS
+			lineageTag: a9125a0c-29bb-4ebc-b526-f99e449fece2
+
+		measure 'DIAS SEM COMPRAS' =
+				
+				CALCULATE(
+				DATEDIFF(
+				    [DATA MAXIMA] ,
+				SELECTEDVALUE('Data_Atualização'[data atualizada]),DAY)
+				)
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: 61da66aa-a65a-42b4-bd64-349d44d2a13e
+
+		measure 'Diff Fat vs meta' =
+				
+				[TOTAL_FATURADO] - [TOTAL_METAS]
+			formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+			displayFolder: COMERCIAL
+			lineageTag: 906226e2-1203-4986-bade-b7ebc5610c92
+
+			annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+		measure 'Faturado Mes Anterior' =
+				
+				CALCULATE(
+				    [TOTAL_FATURADO],
+				    DATEADD( 'Calendario DAX'[Date] , -1 , MONTH )
+				)
+			formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+			displayFolder: COMERCIAL
+			lineageTag: 64a7f22f-993f-436a-9b30-fe93e69229a5
+
+			annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+		measure Filtro2 =
+				
+				var Vtotalcli =
+				 COUNTROWS(VALUES(TB_CLIENTE[Codigo]))
+				
+				RETURN
+				Vtotalcli
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: 08a27156-b89d-466b-b529-3d6a4bcecff8
+
+		measure META_CARTAO = ```
+				
+				IF(
+				    ISINSCOPE( TB_CLIENTE[Nome] ) , BLANK() , 
+				DIVIDE([TOTAL_FATURADO] - [TOTAL_METAS] ,[TOTAL_METAS],0)
+				)
+				```
+			formatString: 0.00%;-0.00%;0.00%
+			lineageTag: ab9ba282-6747-4ffa-bb99-34015628c1f9
+
+		measure Meta_Positivacao =
+				
+				SUM(META[Positivação])
+			formatString: 0
+			lineageTag: daf33b04-5d6f-491e-8b22-56abd5a6a346
+
+		measure s/atendimento =
+				
+				[Total cliente] - [Atendidos]
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: 9432455d-976e-4c7b-87f0-0e20b997cd85
+
+		measure TENDENCIA_FATURAMENTO = ```
+				
+				var vTEND = 
+				DIVIDE([TOTAL_FATURADO],[DIAS_PERCORRIDOS])
+				RETURN
+				vTEND * [TOTAL_DIAS]
+				```
+			formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+			displayFolder: COMERCIAL
+			lineageTag: 29857834-e6aa-4b52-956e-644a8f0342a4
+
+			annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+		measure 'Total cliente' =
+				
+				COUNTROWS(
+				    SUMMARIZE(
+				        MEG_EXCEL_CAMPANHA,
+				        MEG_EXCEL_CAMPANHA[COD_CLIENTE] )
+				)
+			formatString: 0
+			displayFolder: COBERTURA
+			lineageTag: 2650ba0f-d09a-4669-86a2-7840480f0a7e
+
+		measure 'Total Dev A.A' =
+				
+				CALCULATE(
+				    [Total devolucao],
+				    SAMEPERIODLASTYEAR( 'Calendario DAX'[Date] )
+				)
+			lineageTag: e8b2b256-576a-4798-97ec-fd811978ea0f
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Total devolucao' =
+				
+				SUM( MEG_EXCEL_CAMPANHA[TOTAL_NOTA_DEVOLUCAO] )
+			lineageTag: 06c73203-237d-4541-a03b-7d798cebdb1d
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Total devolucao volume' =
+				
+				SUM( MEG_EXCEL_CAMPANHA[TOTAL_QTDE_DEVOLUCAO] )
+			lineageTag: da3d32bd-4cce-493d-86d5-01b0fcd28bc3
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'TOTAL_FAT_A.A' =
+				
+				CALCULATE(
+				    [TOTAL_FATURADO],
+				    SAMEPERIODLASTYEAR('Calendario DAX'[Date])
+				)
+			displayFolder: COMERCIAL
+			lineageTag: 0954bf8d-59ed-44fb-ba1a-cef3e52fcbb1
+
+		measure TOTAL_FATURADO =
+				
+				SUMX(
+				    MEG_EXCEL_CAMPANHA,
+				    MEG_EXCEL_CAMPANHA[TOTAL_NOTA] - MEG_EXCEL_CAMPANHA[TOTAL_NOTA_DEVOLUCAO])
+			formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+			displayFolder: COMERCIAL
+			lineageTag: c5b700b3-286f-4e67-b6d2-a1d23cedb173
+
+			annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+		measure TOTAL_METAS = ```
+				
+				IF(
+				    ISINSCOPE( TB_CLIENTE[nome] ) , BLANK() , 
+				    IF(
+				        HASONEFILTER( MEG_EXCEL_CAMPANHA[FORNECEDOR] ), BLANK() , SUM(META[Valor]) )
+				)
+				```
+			formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+			displayFolder: COMERCIAL
+			lineageTag: 74dc5128-1c32-40b8-8611-3856f46c2b55
+
+			annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+		measure TOTAL_VOLUME =
+				
+				SUMX(
+				    MEG_EXCEL_CAMPANHA,
+				    MEG_EXCEL_CAMPANHA[TOTAL_QTDE] - MEG_EXCEL_CAMPANHA[TOTAL_QTDE_DEVOLUCAO])
+			formatString: #,0
+			displayFolder: COMERCIAL
+			lineageTag: 751f0d3a-e7f3-4418-9f58-8264a4f226f8
+
+			annotation PBI_FormatHint = {"isDecimal":true}
+
+		measure 'Valor_Ultimo pedido' =
+				
+				SUMX (
+				    FILTER (
+				        MEG_EXCEL_CAMPANHA,
+				        MEG_EXCEL_CAMPANHA[COD_CLIENTE] = MAXX ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] )
+				            && MEG_EXCEL_CAMPANHA[Data] = MAXX ( FILTER ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] = MAXX ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] ) && MEG_EXCEL_CAMPANHA[TOTAL_NOTA_DEVOLUCAO] = 0 ), MEG_EXCEL_CAMPANHA[Data] )
+				    ),
+				    MEG_EXCEL_CAMPANHA[TOTAL_NOTA]
+				)
+			displayFolder: SEM COMPRAS
+			lineageTag: 26880555-19ca-4d92-8312-df7a653a00f0
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Volume_Ultimo pedido' =
+				
+				SUMX (
+				    FILTER (
+				        MEG_EXCEL_CAMPANHA,
+				        MEG_EXCEL_CAMPANHA[COD_CLIENTE] = MAXX ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] )
+				            && MEG_EXCEL_CAMPANHA[Data] = MAXX ( FILTER ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] = MAXX ( MEG_EXCEL_CAMPANHA, MEG_EXCEL_CAMPANHA[COD_CLIENTE] ) && MEG_EXCEL_CAMPANHA[TOTAL_QTDE_DEVOLUCAO] = 0  ), MEG_EXCEL_CAMPANHA[Data] )
+				    ),
+				    MEG_EXCEL_CAMPANHA[TOTAL_QTDE]
+				)
+			formatString: 0
+			displayFolder: SEM COMPRAS
+			lineageTag: eebd422b-1cdb-4156-8e25-91a83cf1d827
+
+			annotation PBI_FormatHint = {"isDecimal":true}
+
+		measure 'YTD Dev' = ```
+				
+				TOTALYTD(
+				    [Total devolucao],
+				    'Calendario DAX'[Date] )
+				    
+				```
+			lineageTag: 5a507f49-d63f-4572-9aca-7ee307993079
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'YTD dev A.A' = ```
+				
+				TOTALYTD(
+				    [Total Dev A.A],
+				    'Calendario DAX'[Date] )
+				    
+				```
+			lineageTag: 6daf714d-dba0-4b2b-931b-8589fa4eabd5
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'YTD FATURADO' =
+				
+				TOTALYTD(
+				    [TOTAL_FATURADO],
+				    'Calendario DAX'[Date])
+			displayFolder: COMERCIAL
+			lineageTag: 7fe1e86d-aca7-4052-a22c-19a9ae84393c
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	ref table 'CALENDARIO DAX'
+
+		measure 'Calendario Periodo select' =
+				
+				VAR vMIN = MIN( 'CALENDARIO DAX'[Date] )
+				VAR vMAX = MAX( 'CALENDARIO DAX'[Date] )
+				
+				RETURN
+				vMIN & " - " & vMAX
+			lineageTag: 08b9ccdc-d7d7-4f49-b192-cb9d7f013ebf
+
+		measure 'Dias Faltantes' =
+				
+				VAR vDIAS =
+				[TOTAL_DIAS] - [DIAS_PERCORRIDOS]
+				RETURN
+				"Faltam: " & FORMAT( vDIAS, "" ) & " Dias Úteis"
+			lineageTag: 6527bc12-1ccd-4e8c-92fa-a1f64bb10c44
+
+			changedProperty = IsHidden
+
+		measure DIAS_PERCORRIDOS =
+				
+				CALCULATE(
+				    [TOTAL_DIAS],
+				    'CALENDARIO DAX'[Date] <= SELECTEDVALUE('Data_Atualização'[data atualizada])
+				)
+			formatString: 0
+			lineageTag: e185ce01-6ffd-49af-801c-267a32a18aa1
+
+			changedProperty = IsHidden
+
+		measure TOTAL_DIAS =
+				
+				CALCULATE(
+				    DISTINCTCOUNT('CALENDARIO DAX'[Date]),
+				    'Calendario DAX'[Mês] = MONTH(SELECTEDVALUE('Data_Atualização'[data atualizada])) &&
+				    'Calendario DAX'[Ano] = YEAR(SELECTEDVALUE('Data_Atualização'[data atualizada]))
+				    )
+			formatString: 0
+			lineageTag: b616a6f5-8a13-4cc6-8f2b-1033d866eba2
+
+			changedProperty = IsHidden
+
+	ref table Senhas
+
+		measure CHECK =
+				
+				SWITCH(
+				    TRUE(),
+				    HASONEFILTER(Senhas[ID]) && ValorSenha[Valor ValorSenha] = MAX(Senhas[SENHA]),"MES_ATUAL",
+				    HASONEFILTER('Senha Representante'[Representante]) && ValorSenha[Valor ValorSenha] = MAX('Senha Representante'[Senha]),"MES_ATUAL",
+				    "Senha Errada")
+			lineageTag: 161a5d46-5007-43e1-a9ca-8d8c3fa61e3c
+
+	ref table ValorSenha
+
+		measure 'Valor ValorSenha' = SELECTEDVALUE('ValorSenha'[ValorSenha], 0)
+			formatString: 0
+			lineageTag: 62a119b8-3403-410b-802b-f4757a9f8b89
+

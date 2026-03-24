@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Painel_comercial_Marcon"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e2e5cc7e-e2ae-45b4-b23b-fca856c5356c"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "cfcce87b0929afc7c0eb",
+  "position": {
+    "x": 0,
+    "y": 306.54292343387476,
+    "z": 7000,
+    "height": 295.68445475638055,
+    "width": 1166.8677494199537
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CALENDARIO DAX"
+                    }
+                  },
+                  "Property": "Ano-Mes"
+                }
+              },
+              "queryRef": "CALENDARIO DAX.Ano-Mes",
+              "nativeQueryRef": "Ano-Mes",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TB_CLIENTE"
+                    }
+                  },
+                  "Property": "Nome"
+                }
+              },
+              "queryRef": "TB_CLIENTE.Nome",
+              "nativeQueryRef": "Nome",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TB_CLIENTE"
+                    }
+                  },
+                  "Property": "Codigo"
+                }
+              },
+              "queryRef": "TB_CLIENTE.Codigo",
+              "nativeQueryRef": "Codigo",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Total cliente"
+                }
+              },
+              "queryRef": "_Medidas.Total cliente",
+              "nativeQueryRef": "Total cliente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Positivados"
+                }
+              },
+              "queryRef": "_Medidas.Cobertura",
+              "nativeQueryRef": "Cobertura"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "TB_CLIENTE.Nome"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "TB_CLIENTE.Codigo"
+            ],
+            "isCollapsed": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "228.15913354619386D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "D_Clientes.NOME_FANTASIA"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "25d3031de04618f624f2"
+}

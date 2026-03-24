@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Painel_comercial_Marcon"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ddf1c525-c8bc-4fb6-a6a1-6e1342bdc9cf"
+  }
+}

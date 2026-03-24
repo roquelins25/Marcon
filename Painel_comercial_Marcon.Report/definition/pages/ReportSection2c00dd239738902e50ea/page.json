@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSection2c00dd239738902e50ea",
+  "displayName": "Pagina Inicial",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Comercial.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Comercial3063659378548058.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "fba0fb2f67dd6768250c",
+      "target": "6302d3c3ec655c62821e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "59e227c0617de4eff010",
+      "target": "6302d3c3ec655c62821e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "fba0fb2f67dd6768250c",
+      "target": "5a1dc7f99e4b0f15e269",
+      "type": "NoFilter"
+    }
+  ]
+}
