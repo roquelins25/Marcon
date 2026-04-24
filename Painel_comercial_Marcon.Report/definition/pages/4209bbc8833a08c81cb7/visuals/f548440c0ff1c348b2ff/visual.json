@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "f548440c0ff1c348b2ff",
   "position": {
-    "x": 640,
-    "y": 413.4831460674157,
-    "z": 12000,
-    "height": 293.93258426966293,
-    "width": 626.51685393258424
+    "x": 7.0524983363072842,
+    "y": 307.68472906403946,
+    "z": 3000,
+    "height": 296.1576354679803,
+    "width": 561.2807881773399,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -41,34 +42,6 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Positivados"
-                }
-              },
-              "queryRef": "_Medidas.Positivados",
-              "nativeQueryRef": "Positivados"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Medidas"
-                    }
-                  },
-                  "Property": "Sem Positivacao"
-                }
-              },
-              "queryRef": "_Medidas.Sem Positivacao",
-              "nativeQueryRef": "Sem Positivacao"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Medidas"
-                    }
-                  },
                   "Property": "Ultima Venda"
                 }
               },
@@ -87,7 +60,38 @@
                 }
               },
               "queryRef": "_Medidas.Dias Sem Compra",
-              "nativeQueryRef": "Dias Sem Compra"
+              "nativeQueryRef": "D. Sem Compra",
+              "displayName": "D. Sem Compra"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Total Faturado ao longo do tempo"
+                }
+              },
+              "queryRef": "_Medidas.Total Faturado ao longo do tempo",
+              "nativeQueryRef": "Fat. TOTAL",
+              "displayName": "Fat. TOTAL"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Media Mensal ao longo do tempo"
+                }
+              },
+              "queryRef": "_Medidas.Media Mensal ao longo do tempo",
+              "nativeQueryRef": "Média",
+              "displayName": "Média"
             }
           ]
         }
@@ -102,7 +106,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Positivados"
+                "Property": "Media Mensal ao longo do tempo"
               }
             },
             "direction": "Descending"
@@ -187,192 +191,6 @@
               }
             }
           }
-        },
-        {
-          "properties": {
-            "icon": {
-              "kind": "Icon",
-              "layout": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'IconOnly'"
-                  }
-                }
-              },
-              "verticalAlignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Top'"
-                  }
-                }
-              },
-              "value": {
-                "expr": {
-                  "Conditional": {
-                    "Cases": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 2,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "_Medidas"
-                                  }
-                                },
-                                "Property": "Positivados"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "0D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleSymbolHigh'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 3,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "_Medidas"
-                                  }
-                                },
-                                "Property": "Positivados"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "0D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleSymbolLow'"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "_Medidas.Positivados"
-          }
-        },
-        {
-          "properties": {
-            "icon": {
-              "kind": "Icon",
-              "layout": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'IconOnly'"
-                  }
-                }
-              },
-              "verticalAlignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Top'"
-                  }
-                }
-              },
-              "value": {
-                "expr": {
-                  "Conditional": {
-                    "Cases": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 2,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "_Medidas"
-                                  }
-                                },
-                                "Property": "Sem Positivacao"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "0D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleSymbolLow'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 3,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "_Medidas"
-                                  }
-                                },
-                                "Property": "Sem Positivacao"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "0D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleSymbolHigh'"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "_Medidas.Sem Positivacao"
-          }
         }
       ],
       "rowTotal": [
@@ -431,41 +249,182 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "64.5505617977528D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Medidas.Positivados"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "90.95505617977528D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Medidas.Sem Positivacao"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "269.21181949529574D"
+                  "Value": "194.98696792190015D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "TB_CLIENTE.xCliente"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.02794882653208D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Dias Sem Compra"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "95.63055618414036D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Media Mensal ao longo do tempo"
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Ultima Venda"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Dias Sem Compra"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Total Faturado ao longo do tempo"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Media Mensal ao longo do tempo"
           }
         }
       ]
@@ -533,10 +492,11 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "4745d548277950600170",
   "filterConfig": {
     "filters": [
       {
-        "name": "17325cd18f3111c1109a",
+        "name": "5827f3502b51ce22a997",
         "field": {
           "Measure": {
             "Expression": {
@@ -544,52 +504,45 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "Positivados"
+            "Property": "AUXFILTRO"
           }
         },
-        "type": "Advanced"
-      },
-      {
-        "name": "33be50bf7234f9126068",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "AUXFILTRO"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
               }
-            },
-            "Property": "Sem Positivacao"
-          }
+            }
+          ]
         },
-        "type": "Advanced"
-      },
-      {
-        "name": "9f67e59c48325c289345",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Ultima Venda"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "6e82feba519fd04b91ec",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "TB_CLIENTE"
-              }
-            },
-            "Property": "xCliente"
-          }
-        },
-        "type": "Categorical"
+        "howCreated": "User"
       }
     ]
   }

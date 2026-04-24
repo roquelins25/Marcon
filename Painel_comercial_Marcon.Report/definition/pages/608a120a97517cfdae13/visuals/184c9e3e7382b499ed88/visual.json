@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "184c9e3e7382b499ed88",
   "position": {
     "x": 0,
@@ -7,7 +7,7 @@
     "z": 0,
     "height": 75.1740139211137,
     "width": 961.39211136890958,
-    "tabOrder": 21001
+    "tabOrder": 0
   },
   "visualGroup": {
     "displayName": "Foculto",

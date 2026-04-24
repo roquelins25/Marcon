@@ -8,7 +8,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"MEG_EXCEL_CAMPANHA\",\"META\",\"_Medidas\",\"Data_Atualização\",\"Senha Representante\",\"D_REP\",\"Senhas\",\"TB_PRODUTO\",\"TB_Fornecedor\",\"TB_CLIENTE\"]"
+        "value": "[\"MEG_EXCEL_CAMPANHA\",\"META\",\"_Medidas\",\"Data_Atualização\",\"Senha Representante\",\"D_REP\",\"Senhas\",\"TB_PRODUTO\",\"TB_Fornecedor\",\"TB_CLIENTE\",\"yTBAux\"]"
       },
       {
         "name": "__TEdtr",
@@ -884,27 +884,6 @@
                   }
                 ]
               },
-              "d_clientes.nome_fantasia": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "D_Clientes",
-                    "ConceptualProperty": "NOME_FANTASIA"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Cliente": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
               "d_rep": {
                 "Definition": {
                   "Binding": {
@@ -1312,6 +1291,35 @@
                   }
                 ]
               },
+              "entity__medida.AUX_dias": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "AUXDias"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "AUX dias": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "AUXDias": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "dias": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
               "entity__medida.Valor_Ultimo_pedido": {
                 "Definition": {
                   "Binding": {
@@ -1453,6 +1461,22 @@
                 "Terms": [
                   {
                     "atendidos": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "entity__medida.auxfiltro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "AUXFILTRO"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "auxfiltro": {
                       "State": "Generated"
                     }
                   }
@@ -1715,6 +1739,32 @@
                   }
                 ]
               },
+              "entity__medida.dias_sem_compra": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Dias Sem Compra"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dias sem compra": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "D. Sem Compra": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "entity__medida.dias_sem_compras": {
                 "Definition": {
                   "Binding": {
@@ -1879,6 +1929,32 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.599
+                    }
+                  }
+                ]
+              },
+              "entity__medida.media_mensal_ao_longo_do_tempo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Media Mensal ao longo do tempo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "media mensal ao longo do tempo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Média": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2967,6 +3043,32 @@
                   }
                 ]
               },
+              "entity__medida.total_faturado_ao_longo_do_tempo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Total Faturado ao longo do tempo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total faturado ao longo do tempo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Fat. TOTAL": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "entity__medida.total_metas": {
                 "Definition": {
                   "Binding": {
@@ -3165,6 +3267,35 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.466
+                    }
+                  }
+                ]
+              },
+              "entity__medida.ultima_venda": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "Ultima Venda"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ultima venda": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "venda": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   }
                 ]
@@ -5186,6 +5317,16 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
+                  },
+                  {
+                    "Nome Cliente": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -5349,6 +5490,29 @@
                   },
                   {
                     "VendedorII": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "tb_cliente.x_cliente": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_CLIENTE",
+                    "ConceptualProperty": "xCliente"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "x cliente": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "xCliente": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -5661,6 +5825,82 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "y_TB_aux": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "yTBAux"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "y TB aux": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "yTBAux": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "aux": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "TB aux": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "y_TB_aux.desc": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "yTBAux",
+                    "ConceptualProperty": "Desc"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "desc": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "description": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "y_TB_aux.ordem": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "yTBAux",
+                    "ConceptualProperty": "Ordem"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ordem": {
+                      "State": "Generated"
                     }
                   }
                 ]
@@ -6328,6 +6568,39 @@
                 },
                 "State": "Generated"
               },
+              "calendario_dax_has_entity__medida_media_mensal_ao_longo_do_tempo": {
+                "Binding": {
+                  "ConceptualEntity": "CALENDARIO DAX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.media_mensal_ao_longo_do_tempo"
+                      },
+                      "Subject": {
+                        "Role": "calendario_dax"
+                      }
+                    },
+                    "ID": "calendario_dax_have_media_mensal_ao_longo_do_tempo",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "calendario_dax": {
+                    "Target": {
+                      "Entity": "calendario_dax"
+                    }
+                  },
+                  "entity__medida.media_mensal_ao_longo_do_tempo": {
+                    "Target": {
+                      "Entity": "entity__medida.media_mensal_ao_longo_do_tempo"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "calendario_dax_has_entity__medida_tend": {
                 "Binding": {
                   "ConceptualEntity": "CALENDARIO DAX"
@@ -6917,6 +7190,105 @@
                   "data_atualização.data_atualizada": {
                     "Target": {
                       "Entity": "data_atualização.data_atualizada"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "entity__medida_has_AUX_dias": {
+                "Binding": {
+                  "ConceptualEntity": "_Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.AUX_dias"
+                      },
+                      "Subject": {
+                        "Role": "entity__medida"
+                      }
+                    },
+                    "ID": "Phrasing_medidas_have_AUX_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida": {
+                    "Target": {
+                      "Entity": "entity__medida"
+                    }
+                  },
+                  "entity__medida.AUX_dias": {
+                    "Target": {
+                      "Entity": "entity__medida.AUX_dias"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "entity__medida_has_auxfiltro": {
+                "Binding": {
+                  "ConceptualEntity": "_Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.auxfiltro"
+                      },
+                      "Subject": {
+                        "Role": "entity__medida"
+                      }
+                    },
+                    "ID": "Phrasing_medidas_have_auxfiltro",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida": {
+                    "Target": {
+                      "Entity": "entity__medida"
+                    }
+                  },
+                  "entity__medida.auxfiltro": {
+                    "Target": {
+                      "Entity": "entity__medida.auxfiltro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "entity__medida_has_dias_sem_compra": {
+                "Binding": {
+                  "ConceptualEntity": "_Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.dias_sem_compra"
+                      },
+                      "Subject": {
+                        "Role": "entity__medida"
+                      }
+                    },
+                    "ID": "Phrasing_medidas_have_dias_sem_compra",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida": {
+                    "Target": {
+                      "Entity": "entity__medida"
+                    }
+                  },
+                  "entity__medida.dias_sem_compra": {
+                    "Target": {
+                      "Entity": "entity__medida.dias_sem_compra"
                     }
                   }
                 },
@@ -7892,6 +8264,39 @@
                 },
                 "State": "Generated"
               },
+              "meg_excel_campanha_has_entity__medida_media_mensal_ao_longo_do_tempo": {
+                "Binding": {
+                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.media_mensal_ao_longo_do_tempo"
+                      },
+                      "Subject": {
+                        "Role": "meg_excel_campanha"
+                      }
+                    },
+                    "ID": "meg_excel_campanha_have_media_mensal_ao_longo_do_tempo",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.media_mensal_ao_longo_do_tempo": {
+                    "Target": {
+                      "Entity": "entity__medida.media_mensal_ao_longo_do_tempo"
+                    }
+                  },
+                  "meg_excel_campanha": {
+                    "Target": {
+                      "Entity": "meg_excel_campanha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "meg_excel_campanha_has_entity__medida_meta": {
                 "Binding": {
                   "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
@@ -7948,72 +8353,6 @@
                   "entity__medida.meta_cartao": {
                     "Target": {
                       "Entity": "entity__medida.meta_cartao"
-                    }
-                  },
-                  "meg_excel_campanha": {
-                    "Target": {
-                      "Entity": "meg_excel_campanha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "meg_excel_campanha_has_entity__medida_s_positivados_text": {
-                "Binding": {
-                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "entity__medida.s_positivados_text"
-                      },
-                      "Subject": {
-                        "Role": "meg_excel_campanha"
-                      }
-                    },
-                    "ID": "meg_excel_campanha_have__s_positivados_text",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "entity__medida.s_positivados_text": {
-                    "Target": {
-                      "Entity": "entity__medida.s_positivados_text"
-                    }
-                  },
-                  "meg_excel_campanha": {
-                    "Target": {
-                      "Entity": "meg_excel_campanha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "meg_excel_campanha_has_entity__medida_sem_positivacao": {
-                "Binding": {
-                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "entity__medida.sem_positivacao"
-                      },
-                      "Subject": {
-                        "Role": "meg_excel_campanha"
-                      }
-                    },
-                    "ID": "meg_excel_campanha_have_sem_positivacao",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "entity__medida.sem_positivacao": {
-                    "Target": {
-                      "Entity": "entity__medida.sem_positivacao"
                     }
                   },
                   "meg_excel_campanha": {
@@ -8288,6 +8627,39 @@
                 },
                 "State": "Generated"
               },
+              "meg_excel_campanha_has_entity__medida_total_faturado_ao_longo_do_tempo": {
+                "Binding": {
+                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.total_faturado_ao_longo_do_tempo"
+                      },
+                      "Subject": {
+                        "Role": "meg_excel_campanha"
+                      }
+                    },
+                    "ID": "meg_excel_campanha_have_total_faturado_ao_longo_do_tempo",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.total_faturado_ao_longo_do_tempo": {
+                    "Target": {
+                      "Entity": "entity__medida.total_faturado_ao_longo_do_tempo"
+                    }
+                  },
+                  "meg_excel_campanha": {
+                    "Target": {
+                      "Entity": "meg_excel_campanha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "meg_excel_campanha_has_entity__medida_total_metas": {
                 "Binding": {
                   "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
@@ -8344,6 +8716,39 @@
                   "entity__medida.total_volume": {
                     "Target": {
                       "Entity": "entity__medida.total_volume"
+                    }
+                  },
+                  "meg_excel_campanha": {
+                    "Target": {
+                      "Entity": "meg_excel_campanha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "meg_excel_campanha_has_entity__medida_ultima_venda": {
+                "Binding": {
+                  "ConceptualEntity": "MEG_EXCEL_CAMPANHA"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "entity__medida.ultima_venda"
+                      },
+                      "Subject": {
+                        "Role": "meg_excel_campanha"
+                      }
+                    },
+                    "ID": "meg_excel_campanha_have_ultima_venda",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "entity__medida.ultima_venda": {
+                    "Target": {
+                      "Entity": "entity__medida.ultima_venda"
                     }
                   },
                   "meg_excel_campanha": {
@@ -11124,6 +11529,39 @@
                 },
                 "State": "Generated"
               },
+              "tb_cliente_has_x_cliente": {
+                "Binding": {
+                  "ConceptualEntity": "TB_CLIENTE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "tb_cliente.x_cliente"
+                      },
+                      "Subject": {
+                        "Role": "tb_cliente"
+                      }
+                    },
+                    "ID": "tb_clientes_have_x_clientes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "tb_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente"
+                    }
+                  },
+                  "tb_cliente.x_cliente": {
+                    "Target": {
+                      "Entity": "tb_cliente.x_cliente"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "tb_produto_has_descricao_produto": {
                 "Binding": {
                   "ConceptualEntity": "TB_PRODUTO"
@@ -11330,6 +11768,72 @@
                   "x_param.x_param": {
                     "Target": {
                       "Entity": "x_param.x_param"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "y_TB_aux_has_desc": {
+                "Binding": {
+                  "ConceptualEntity": "yTBAux"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "y_TB_aux.desc"
+                      },
+                      "Subject": {
+                        "Role": "y_TB_aux"
+                      }
+                    },
+                    "ID": "y_TB_aux_have_descs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "y_TB_aux": {
+                    "Target": {
+                      "Entity": "y_TB_aux"
+                    }
+                  },
+                  "y_TB_aux.desc": {
+                    "Target": {
+                      "Entity": "y_TB_aux.desc"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "y_TB_aux_has_ordem": {
+                "Binding": {
+                  "ConceptualEntity": "yTBAux"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "y_TB_aux.ordem"
+                      },
+                      "Subject": {
+                        "Role": "y_TB_aux"
+                      }
+                    },
+                    "ID": "y_TB_aux_have_ordems",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "y_TB_aux": {
+                    "Target": {
+                      "Entity": "y_TB_aux"
+                    }
+                  },
+                  "y_TB_aux.ordem": {
+                    "Target": {
+                      "Entity": "y_TB_aux.ordem"
                     }
                   }
                 },
@@ -12082,6 +12586,7 @@
           },
           {
             "name": "META_CARTAO",
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "IF(",
@@ -12168,6 +12673,7 @@
           },
           {
             "name": "Meta_Positivacao",
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "SUM(META[Positivação])"
@@ -12375,6 +12881,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "SUM( MEG_EXCEL_CAMPANHA[TOTAL_NOTA_DEVOLUCAO] )"
@@ -12389,6 +12896,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "SUM( MEG_EXCEL_CAMPANHA[TOTAL_QTDE_DEVOLUCAO] )"
@@ -12403,6 +12911,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "CALCULATE(",
@@ -12420,6 +12929,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "TOTALYTD(",
@@ -12437,6 +12947,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "TOTALYTD(",
@@ -12448,6 +12959,7 @@
           },
           {
             "name": "_Devolucao vs faturamento",
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "DIVIDE(",
@@ -12458,6 +12970,7 @@
           },
           {
             "name": "_Devolucao vs faturamento ytd",
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "DIVIDE(",
@@ -12536,6 +13049,7 @@
           },
           {
             "name": "Cor Texto Calendario",
+            "displayFolder": "*Outros",
             "expression": [
               "",
               "VAR _media = ",
@@ -12607,10 +13121,91 @@
             "displayFolder": "COBERTURA",
             "expression": [
               "",
-              "DATEDIFF( [Ultima Venda] , MAX( 'CALENDARIO DAX'[Date] ) , DAY )"
+              "DATEDIFF( [Ultima Venda] , TODAY() , DAY )"
             ],
             "formatString": "0",
             "lineageTag": "8b061ad4-a4f2-40c5-b84d-c0dc31d22afe"
+          },
+          {
+            "name": "Total Faturado ao longo do tempo",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "*Outros",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM(MEG_EXCEL_CAMPANHA[TOTAL_NOTA]),",
+              "    ALL( 'CALENDARIO DAX' )",
+              ")"
+            ],
+            "lineageTag": "28c946ca-2fd1-428d-bd2a-ad82755fa8e8"
+          },
+          {
+            "name": "Media Mensal ao longo do tempo",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "*Outros",
+            "expression": [
+              "",
+              "VAR Total =",
+              "    CALCULATE(",
+              "        SUM(MEG_EXCEL_CAMPANHA[TOTAL_NOTA]),",
+              "        ALL('CALENDARIO DAX')",
+              "    )",
+              "VAR Meses =",
+              "    CALCULATE(",
+              "        DISTINCTCOUNT('CALENDARIO DAX'[Ano-Mes]),",
+              "        ALL('CALENDARIO DAX')",
+              "    )",
+              "RETURN",
+              "    DIVIDE(Total, Meses)"
+            ],
+            "lineageTag": "1fe4f781-2dbb-4d0e-8524-b26977cef5fe"
+          },
+          {
+            "name": "AUXDias",
+            "displayFolder": "COBERTURA",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Dias Sem Compra] <= 30, 2,",
+              "    [Dias Sem Compra] > 30 && [Dias Sem Compra] <= 60, 3,",
+              "    [Dias Sem Compra] > 60 && [Dias Sem Compra] <= 90, 4,",
+              "    5 )"
+            ],
+            "formatString": "0",
+            "lineageTag": "9e8370f0-bdc5-49d4-8b6f-1a350ac9bf07"
+          },
+          {
+            "name": "AUXFILTRO",
+            "displayFolder": "COBERTURA",
+            "expression": [
+              "",
+              "VAR vSELECT = VALUE( SELECTEDVALUE( yTBAux[Ordem] ) )",
+              "VAR vMEDIDA = [AUXDias]",
+              "VAR vRESULT =",
+              "SWITCH(",
+              "    TRUE(),",
+              "    vSELECT = 2 && vMEDIDA = 2, 1,",
+              "    vSELECT = 3 && vMEDIDA = 3, 1,",
+              "    vSELECT = 4 && vMEDIDA = 4, 1,",
+              "    vSELECT = 5 && vMEDIDA = 5, 1,",
+              "    vSELECT = 1 , 1,",
+              "    0 )",
+              "RETURN",
+              "vRESULT"
+            ],
+            "formatString": "0",
+            "lineageTag": "564b7157-6d9e-48db-b6b3-d8baaed00dcd"
           }
         ],
         "partitions": [
@@ -14061,6 +14656,69 @@
                 "    #\"Coluna Mesclada Inserida\" = Table.AddColumn(TB_CLIENTE_, \"xCliente\", each Text.Combine({Text.From([Codigo], \"pt-BR\"), [Nome]}, \" - \"), type text)",
                 "in",
                 "    #\"Coluna Mesclada Inserida\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "yTBAux",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Ordem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8e8ba161-b5c5-47c1-a408-a1fcd774c789",
+            "sourceColumn": "Ordem",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "76eb8a0e-9232-4013-b643-89a5fdcfeb02",
+            "sortByColumn": "Ordem",
+            "sourceColumn": "Desc",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9c1ba45c-552d-4800-8c51-0ff28af7e19c",
+        "partitions": [
+          {
+            "name": "yTBAux",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUQrJT8kvVorViVYyAvJiSg0MjJMVjA0UXDITIcLGQGEoXyFRwQxJxgQoYwaXsUSSMYUZlYoQjgUA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Ordem = _t, Desc = _t])",
+                "in",
+                "    Fonte"
               ],
               "type": "m"
             }

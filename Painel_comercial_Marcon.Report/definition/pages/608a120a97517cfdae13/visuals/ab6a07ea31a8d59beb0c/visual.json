@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "ab6a07ea31a8d59beb0c",
   "position": {
     "x": 967.91848617176129,
@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 55.895196506550214,
     "width": 291.58660844250363,
-    "tabOrder": 21003
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "D_Clientes"
+                      "Entity": "TB_CLIENTE"
                     }
                   },
-                  "Property": "NOME_FANTASIA"
+                  "Property": "Nome"
                 }
               },
-              "queryRef": "D_Clientes.NOME_FANTASIA",
-              "nativeQueryRef": "Cliente",
+              "queryRef": "TB_CLIENTE.Nome",
+              "nativeQueryRef": "Nome Cliente",
               "active": true,
-              "displayName": "Cliente"
+              "displayName": "Nome Cliente"
             }
           ]
         }

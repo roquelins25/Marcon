@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "0ff1cd26d0b81a02ab17",
   "position": {
-    "x": 640.19704433497543,
-    "y": 105.51724137931035,
-    "z": 10000,
+    "x": 551.23443907884212,
+    "y": 1.3453371836249397,
+    "z": 2000,
     "height": 294.384236453202,
-    "width": 626.89655172413791
+    "width": 626.89655172413791,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -103,7 +104,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Positivados"
+                "Property": "% Positivado vs Total de clientes"
               }
             },
             "direction": "Descending"
@@ -415,14 +416,14 @@
                           "min": {
                             "color": {
                               "Literal": {
-                                "Value": "'#e6e6e6'"
+                                "Value": "'#FE1E50'"
                               }
                             }
                           },
                           "max": {
                             "color": {
                               "Literal": {
-                                "Value": "'#999999'"
+                                "Value": "'#e6e6e6'"
                               }
                             }
                           },
@@ -601,5 +602,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "4745d548277950600170"
 }

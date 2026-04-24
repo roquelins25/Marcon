@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "165dfe369d0e6d5e1664",
   "position": {
     "x": 904.59396751740144,
@@ -7,7 +7,7 @@
     "z": 18000,
     "height": 289.83758700696058,
     "width": 365.84686774941997,
-    "tabOrder": 21000
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -483,10 +483,45 @@
                   "Value": "'Center'"
                 }
               }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
             "metadata": "Sum(CALENDARIO DAX.Dia)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.TOTAL_FATURADO"
           }
         }
       ]
@@ -579,23 +614,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "0a8149a985368fdec06c",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "bb881f6df0565821f37c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "CALENDARIO DAX"
-              }
-            },
-            "Property": "DiasSemana"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "0a8149a985368fdec06c"
 }

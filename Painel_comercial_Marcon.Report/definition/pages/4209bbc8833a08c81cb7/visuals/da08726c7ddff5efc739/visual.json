@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "da08726c7ddff5efc739",
   "position": {
-    "x": 88.669950738916256,
-    "y": 105.51724137931035,
-    "z": 7000,
-    "height": 109.95073891625616,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 95.763546798029552,
     "width": 551.5270935960591,
-    "tabOrder": 8000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "cardVisual",
@@ -611,50 +611,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ec6e8274f1badb90994a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Total cliente"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "98e4dce1d60ad4a8f52b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Positivados"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "26b4a60686933d55d04a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Sem Positivacao"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "4745d548277950600170"
 }
