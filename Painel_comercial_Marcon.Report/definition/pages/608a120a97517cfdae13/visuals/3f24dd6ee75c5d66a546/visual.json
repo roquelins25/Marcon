@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "d27853132a7e9f3f44e7",
+  "name": "3f24dd6ee75c5d66a546",
   "position": {
-    "x": 1123.4934497816594,
-    "y": 679.12663755458516,
-    "z": 7000,
-    "height": 34.468704512372632,
-    "width": 121.10625909752547,
-    "tabOrder": 7000
+    "x": 269.05582356995177,
+    "y": 7.0572019297036528,
+    "z": 3001,
+    "height": 39.696760854583047,
+    "width": 99.6829772570641,
+    "tabOrder": 20002
   },
   "visual": {
     "visualType": "actionButton",
@@ -54,19 +54,6 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'BFiltroAplicar'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "visualLink": [
         {
           "properties": {
@@ -80,14 +67,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Bookmark'"
-                }
-              }
-            },
-            "bookmark": {
-              "expr": {
-                "Literal": {
-                  "Value": "'4ce47bdad1d2116a62a0'"
+                  "Value": "'PageNavigation'"
                 }
               }
             },
@@ -104,6 +84,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "5dc97fef9b7f36500474",
   "howCreated": "InsertVisualButton"
 }

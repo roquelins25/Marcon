@@ -13680,8 +13680,8 @@
               "",
               "SWITCH(",
               "    TRUE(),",
-              "    HASONEFILTER(Senhas[ID]) && ValorSenha[Valor ValorSenha] = MAX(Senhas[SENHA]),\"MES_ATUAL\",",
-              "    HASONEFILTER('Senha Representante'[Representante]) && ValorSenha[Valor ValorSenha] = MAX('Senha Representante'[Senha]),\"MES_ATUAL\",",
+              "    HASONEFILTER(Senhas[ID]) && ValorSenha[Valor ValorSenha] = MAX(Senhas[SENHA]),\"Home\",",
+              "    HASONEFILTER('Senha Representante'[Representante]) && ValorSenha[Valor ValorSenha] = MAX('Senha Representante'[Senha]),\"Home\",",
               "    \"Senha Errada\")"
             ],
             "lineageTag": "161a5d46-5007-43e1-a9ca-8d8c3fa61e3c"

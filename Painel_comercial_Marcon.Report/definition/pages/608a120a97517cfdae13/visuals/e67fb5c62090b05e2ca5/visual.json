@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "44ae1c9481e8f1e23629",
+  "name": "e67fb5c62090b05e2ca5",
   "position": {
-    "x": 0,
+    "x": 605.15506547208827,
     "y": 0,
-    "z": 2000,
-    "height": 40.928074245939676,
-    "width": 266.45011600928075,
-    "tabOrder": 0
+    "z": 0,
+    "height": 40.578911095796,
+    "width": 266.40937284631292,
+    "tabOrder": 20001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,35 +20,18 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Senhas"
+                      "Entity": "Senha Representante"
                     }
                   },
-                  "Property": "ID"
+                  "Property": "Representante"
                 }
               },
-              "queryRef": "Senhas.ID",
-              "nativeQueryRef": "ID",
+              "queryRef": "Senha Representante.Representante",
+              "nativeQueryRef": "Representante",
               "active": true
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Senhas"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -119,7 +102,15 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -143,7 +134,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'ADM'"
+                  "Value": "'RCA'"
                 }
               }
             }
@@ -152,11 +143,11 @@
       ]
     },
     "syncGroup": {
-      "groupName": "ID",
+      "groupName": "Representante",
       "fieldChanges": true,
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "184c9e3e7382b499ed88"
+  "isHidden": true
 }

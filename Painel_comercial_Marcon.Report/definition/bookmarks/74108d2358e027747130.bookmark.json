@@ -3,9 +3,7 @@
   "displayName": "Vendas Filtro",
   "name": "74108d2358e027747130",
   "options": {
-    "targetVisualNames": [
-      "8de2abde3198cba16872"
-    ],
+    "targetVisualNames": [],
     "suppressData": true
   },
   "explorationState": {
@@ -49,7 +47,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "ef3bac4b872bc7323aee",
+                  "name": "46f4565b684ca6e04dd0",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -104,7 +102,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "255d178e9db318908898",
+                  "name": "788bd5c9807ba04b1a07",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -159,7 +157,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "9676d80d609adb4c8537",
+                  "name": "ca02d6a9c103e03741c4",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -214,7 +212,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "97d92e97b80c59b8d2ed",
+                  "name": "208108e943062e840659",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -269,7 +267,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "ada938edc0c33e6dd030",
+                  "name": "d6b628b009b4ee276e3e",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -419,7 +417,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "14c97be4a1980d620579",
+                  "name": "9f98b02ed30e7e799832",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -480,7 +478,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "3d31d91e10dbc4207032",
+                  "name": "9b000a1b40d7473cd0b3",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -505,7 +503,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "2f9c7daf242b87b004a4",
+                  "name": "14c0739c815d7945297e",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -520,7 +518,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "7489d91bc8bcc0995b0a",
+                  "name": "fb26faadc4e094ce09d1",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -535,7 +533,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "08faa1b3c0076614bba4",
+                  "name": "98a61960374e00e0300a",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -550,7 +548,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0dc37b511e2051869b72",
+                  "name": "883b6ff89b5a5e4234a1",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -565,7 +563,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0d0a31e3dee822c969ce",
+                  "name": "8b7ff26a10cbc2569b8b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -580,7 +578,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "7852a10a7a5a7ea9096e",
+                  "name": "9c1235aee1c0ca95d23d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -725,7 +723,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "d15a27542bb06297c2a9",
+                  "name": "4572a2903c570b9704da",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -740,7 +738,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "fe9a98efc36420b33a02",
+                  "name": "3728bae8320ed7b5919b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -755,7 +753,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "26b6bad491000ba134ea",
+                  "name": "52b0ff905b3dc2001b8e",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -770,7 +768,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0b8f601eb18702903b78",
+                  "name": "0ce2787e00009e2de0ab",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -785,7 +783,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "947185f1ec2c315d706b",
+                  "name": "61ee4bd90d8e72dc5598",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -800,7 +798,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "1a265c5f6e45095e50c2",
+                  "name": "2e4473caad8e058ad3cb",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -933,7 +931,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "7cc2cd42b352bd0bd8ed",
+                  "name": "3d5953b069971b801917",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -948,7 +946,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "4f7067072da68535d33d",
+                  "name": "8b682a300ebe834763ac",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -963,7 +961,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "445bd420e1009405de9c",
+                  "name": "1d43c7b60c20e70a9b22",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -978,7 +976,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "f198f1f0a0a547d8a826",
+                  "name": "990a23ed88041b54eec5",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -993,7 +991,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "a6cda8a67a8a6b12304b",
+                  "name": "973fe80d78c00e2b86e0",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1008,7 +1006,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "3ae8fd10ec09ea969a57",
+                  "name": "596dc9b617e803990894",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1141,7 +1139,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "fc57f84fe02e285a7349",
+                  "name": "e471fe34406ab0e1b53a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1156,7 +1154,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0fff13e0a72c2978a633",
+                  "name": "79c46e01d331be970e3a",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1171,7 +1169,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "fbb99b1014d342365e9c",
+                  "name": "4e64b3f518aa1e748e95",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1186,7 +1184,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "ee1e74a5b0566ac0ba1d",
+                  "name": "1a6dce2b2a0b8c522053",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1201,7 +1199,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "8e2bbea930062d7901b0",
+                  "name": "302cc742a72a314b55eb",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1216,7 +1214,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "efde00803b28a9dbebda",
+                  "name": "10f52f55dc8d58c99d9b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1231,7 +1229,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "67603e30c246625c09cd",
+                  "name": "018047f9b9a0b080b173",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -1246,7 +1244,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "c6635f40175b99ec3330",
+                  "name": "8a6144579b592b68b0d7",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1261,7 +1259,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "37adf0445335b1040c86",
+                  "name": "81d037bb16c9a188ad30",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1276,7 +1274,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "7872d1db83e77696981c",
+                  "name": "aa6354b843c10ca267cd",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1424,7 +1422,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "dded377a15e110a7cb05",
+                  "name": "7cf6c770cd922b089411",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1439,7 +1437,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "020074af28bb546e0838",
+                  "name": "b1ddad249733401d0de8",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1454,7 +1452,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "d9180555d06090a0421c",
+                  "name": "9c7f6713001084d31409",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1494,7 +1492,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "e86f412e6a190aa22b5a",
+                  "name": "f02b6e761a553a40a2ba",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1509,7 +1507,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "b7c2a442963a41ac6cc8",
+                  "name": "b91c0b0d7b492492a21a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1524,7 +1522,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "e2382b980933cee2815a",
+                  "name": "71f2907a9910a38a257e",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1559,499 +1557,11 @@
               }
             }
           },
-          "0ff1cd26d0b81a02ab17": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "6ace7d705dbe184402c9",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "be62b29a7b288b991d7c",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Total cliente"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "d7ec9fc679c20b60301b",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Positivados"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "6f4b55e7c0e403b2e7d6",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Sem Positivacao"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "cbc87f220703e7978b32",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "% Positivado vs Total de clientes"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "% Positivado vs Total de clientes"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "D_REP.REPRESENTANTE"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "D_REP"
-                              }
-                            },
-                            "Property": "REPRESENTANTE"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": [],
-                    "children": [
-                      {
-                        "identityValues": [
-                          {
-                            "Literal": {
-                              "Value": "'ROBSON GONÇALVES'"
-                            }
-                          }
-                        ],
-                        "isToggled": true
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          },
-          "f548440c0ff1c348b2ff": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "0e6c24679e58bb305b77",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "xCliente"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "5fcc81878d0bd3e734a1",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Ultima Venda"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "c6e3bd20163cde953074",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Dias Sem Compra"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "4797473559037d8d3d50",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Total Faturado ao longo do tempo"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "c87822ef8987b325cd92",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Media Mensal ao longo do tempo"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "5827f3502b51ce22a997",
-                  "type": "Advanced",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "_",
-                        "Entity": "_Medidas",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "_"
-                                  }
-                                },
-                                "Property": "AUXFILTRO"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "1L"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "AUXFILTRO"
-                    }
-                  },
-                  "howCreated": 1
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Media Mensal ao longo do tempo"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "xCliente"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_CLIENTE.xCliente"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": []
-                  }
-                }
-              ]
-            }
-          },
-          "f2fdfa188363634908d8": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "a9a916779909a031b275",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "7cf5f70837da550342e5",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "DESCRICAO_PRODUTO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "07ca762ba422ce839b30",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "3e82763605c690439050",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  }
-                ],
-                "Columns": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.GRUPO_ITEM"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "TB_PRODUTO"
-                              }
-                            },
-                            "Property": "GRUPO_ITEM"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.DESCRICAO_PRODUTO"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": null
-                  }
-                }
-              ]
-            }
-          },
           "c924de21d1c2b4b07853": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "bf6d62a308064530a7de",
+                  "name": "f6343131d90ade6cd097",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -2152,11 +1662,168 @@
               }
             }
           },
+          "0ff1cd26d0b81a02ab17": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "598436706d17927c8151",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "62962695b72266389b33",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total cliente"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8f8ab01090a02628434c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Positivados"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "876094d366c25cec3e72",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Sem Positivacao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "074ac93b216d1c3d851d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "% Positivado vs Total de clientes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "% Positivado vs Total de clientes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "D_REP.REPRESENTANTE"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "D_REP"
+                              }
+                            },
+                            "Property": "REPRESENTANTE"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": [],
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'ROBSON GONÇALVES'"
+                            }
+                          }
+                        ],
+                        "isToggled": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
           "12445b3e22aae471cc78": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "66e2ce9f731e611152d3",
+                  "name": "0b23c5562540eb980121",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -2176,53 +1843,6 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "s",
-                                "Entity": "Senhas",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "s"
-                                            }
-                                          },
-                                          "Property": "ID"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'Vendas'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
                   "data": [
                     {
                       "properties": {
@@ -2272,11 +1892,342 @@
               }
             }
           },
+          "f548440c0ff1c348b2ff": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5827f3502b51ce22a997",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "_",
+                        "Entity": "_Medidas",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "_"
+                                  }
+                                },
+                                "Property": "AUXFILTRO"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "AUXFILTRO"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "b5f035349b63b32be4c1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "xCliente"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "183ed2d0b90de36d40d7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Ultima Venda"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "bd28d10603330c4a59b4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Dias Sem Compra"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a426f3393a59e7542080",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total Faturado ao longo do tempo"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f969adb48e47b6ab8c2b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Media Mensal ao longo do tempo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Media Mensal ao longo do tempo"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "xCliente"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_CLIENTE.xCliente"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "f2fdfa188363634908d8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e17f9aa8437041d60d84",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "023ee8d806281c92e384",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "85c261ba596e4c52953d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "DESCRICAO_PRODUTO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "505e0201e003d48b6705",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.GRUPO_ITEM"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "TB_PRODUTO"
+                              }
+                            },
+                            "Property": "GRUPO_ITEM"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.DESCRICAO_PRODUTO"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
           "68edd2575a819c659450": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "f2e3fdb5ca6008a07505",
+                  "name": "23a80f992b7114b2002b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -2386,6 +2337,100 @@
                     }
                   }
                 ]
+              }
+            }
+          },
+          "52fa132aa40d946be294": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "35acb410d2b0669a0edb": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "b02333ea1704430e1422": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d5dee193a6745aab66aa": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "ce82c6560cb11648a2d8": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "b5bf2a1267576c501181": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "2fe1e3f787ec360c6d1a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "132aa670b372421493c0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Senha Representante"
+                        }
+                      },
+                      "Property": "Representante"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Senha Representante"
+                        }
+                      },
+                      "Property": "Representante"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
               }
             }
           }
