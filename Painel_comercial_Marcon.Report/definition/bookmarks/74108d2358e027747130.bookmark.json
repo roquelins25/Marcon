@@ -3,9 +3,7 @@
   "displayName": "Vendas Filtro",
   "name": "74108d2358e027747130",
   "options": {
-    "targetVisualNames": [
-      "8de2abde3198cba16872"
-    ],
+    "targetVisualNames": [],
     "suppressData": true
   },
   "explorationState": {
@@ -33,23 +31,56 @@
     "sections": {
       "4209bbc8833a08c81cb7": {
         "visualContainers": {
-          "b581446d4da6342e0137": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "50920939b6888abaa336": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "f7dafe0801a712029153": {
+          "0ef81403e19c28452204": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "ef3bac4b872bc7323aee",
+                  "name": "a294b802d47d8ecc6b5a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "883996676e912c0da9a2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "833eccedc6713bcbd030",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6336982806d2681425b0",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -59,6 +90,169 @@
                         }
                       },
                       "Property": "DESCRICAO_PRODUTO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5f5baf56d73433035558",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "78176de1675db274d49b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_CLIENTE.Nome"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.GRUPO_ITEM"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "TB_PRODUTO"
+                              }
+                            },
+                            "Property": "GRUPO_ITEM"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.DESCRICAO_PRODUTO"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "D_REP.REPRESENTANTE"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "D_REP"
+                              }
+                            },
+                            "Property": "REPRESENTANTE"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "0f9075aa38adb9a3449e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c4960694c50ac8b10898",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
                     }
                   },
                   "howCreated": 0
@@ -90,10 +284,297 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4cfe78e4398453582acb": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "50920939b6888abaa336": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "599e3e7203baff0fec10": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "71843e02643eaa203176",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4cac312179da7a070ac9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_Fornecedor"
+                        }
+                      },
+                      "Property": "FORNECEDOR"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c2c392b2a8d537758752",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6473e04d55783b4296bd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
                           "Entity": "TB_PRODUTO"
                         }
                       },
                       "Property": "DESCRICAO_PRODUTO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b7a59c948bec86d17a6e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "02adc3b397e02aaad078",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "D_REP"
+                        }
+                      },
+                      "Property": "REPRESENTANTE"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_Fornecedor"
+                        }
+                      },
+                      "Property": "FORNECEDOR"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_Fornecedor.FORNECEDOR"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "TB_Fornecedor"
+                              }
+                            },
+                            "Property": "FORNECEDOR"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.GRUPO_ITEM"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "TB_PRODUTO"
+                              }
+                            },
+                            "Property": "GRUPO_ITEM"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.DESCRICAO_PRODUTO"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "D_REP.REPRESENTANTE"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "D_REP"
+                              }
+                            },
+                            "Property": "REPRESENTANTE"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "5b017730ecdf6fc1d809": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2506411778b182b4a147",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_Fornecedor"
+                        }
+                      },
+                      "Property": "FORNECEDOR"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_Fornecedor"
+                        }
+                      },
+                      "Property": "FORNECEDOR"
                     }
                   }
                 ]
@@ -104,7 +585,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "255d178e9db318908898",
+                  "name": "92846c20a39bab987073",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -149,116 +630,6 @@
                         }
                       },
                       "Property": "GRUPO_ITEM"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "5b017730ecdf6fc1d809": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "9676d80d609adb4c8537",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_Fornecedor"
-                        }
-                      },
-                      "Property": "FORNECEDOR"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_Fornecedor"
-                        }
-                      },
-                      "Property": "FORNECEDOR"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "e8e1c673abf0f9d0548f": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "97d92e97b80c59b8d2ed",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "Nome"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "Nome"
                     }
                   }
                 ]
@@ -269,7 +640,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "ada938edc0c33e6dd030",
+                  "name": "6320253cab909b61ee17",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -415,72 +786,11 @@
               }
             }
           },
-          "0f9075aa38adb9a3449e": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "14c97be4a1980d620579",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "4cfe78e4398453582acb": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
           "91f894f5db57d13684d5": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "3d31d91e10dbc4207032",
+                  "name": "323bd6128c096e412506",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -501,439 +811,11 @@
               "objects": {}
             }
           },
-          "599e3e7203baff0fec10": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "2f9c7daf242b87b004a4",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "7489d91bc8bcc0995b0a",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_Fornecedor"
-                        }
-                      },
-                      "Property": "FORNECEDOR"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "08faa1b3c0076614bba4",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0dc37b511e2051869b72",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "DESCRICAO_PRODUTO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0d0a31e3dee822c969ce",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "7852a10a7a5a7ea9096e",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 1,
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Columns": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  }
-                ],
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_Fornecedor"
-                        }
-                      },
-                      "Property": "FORNECEDOR"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_Fornecedor.FORNECEDOR"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "TB_Fornecedor"
-                              }
-                            },
-                            "Property": "FORNECEDOR"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.GRUPO_ITEM"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "TB_PRODUTO"
-                              }
-                            },
-                            "Property": "GRUPO_ITEM"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.DESCRICAO_PRODUTO"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "D_REP.REPRESENTANTE"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "D_REP"
-                              }
-                            },
-                            "Property": "REPRESENTANTE"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": []
-                  }
-                }
-              ],
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "0ef81403e19c28452204": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "d15a27542bb06297c2a9",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "fe9a98efc36420b33a02",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "Nome"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "26b6bad491000ba134ea",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0b8f601eb18702903b78",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "DESCRICAO_PRODUTO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "947185f1ec2c315d706b",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "1a265c5f6e45095e50c2",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 1,
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "D_REP"
-                        }
-                      },
-                      "Property": "REPRESENTANTE"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Columns": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  }
-                ],
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "Nome"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_CLIENTE.Nome"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.GRUPO_ITEM"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "TB_PRODUTO"
-                              }
-                            },
-                            "Property": "GRUPO_ITEM"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.DESCRICAO_PRODUTO"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "D_REP.REPRESENTANTE"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "D_REP"
-                              }
-                            },
-                            "Property": "REPRESENTANTE"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": []
-                  }
-                }
-              ],
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
           "9e636a6486b32e852825": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "7cc2cd42b352bd0bd8ed",
+                  "name": "33dd77fc92501a327eb0",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -948,7 +830,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "4f7067072da68535d33d",
+                  "name": "5d407e4750eb241505a0",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -963,7 +845,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "445bd420e1009405de9c",
+                  "name": "acfd93a6cb116c6e9b70",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -978,7 +860,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "f198f1f0a0a547d8a826",
+                  "name": "c84fe6040781983ee085",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -993,7 +875,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "a6cda8a67a8a6b12304b",
+                  "name": "57b2c49adb8482406169",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1008,7 +890,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "3ae8fd10ec09ea969a57",
+                  "name": "ce50c6dad50d00d6302d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1135,13 +1017,19 @@
               "display": {
                 "mode": "hidden"
               }
+            }
+          },
+          "b581446d4da6342e0137": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
             }
           },
           "d25866952e3834059428": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "fc57f84fe02e285a7349",
+                  "name": "8f72c7e77b0edd0e0ec9",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1156,7 +1044,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0fff13e0a72c2978a633",
+                  "name": "bd43e0527694e1309450",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1171,7 +1059,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "fbb99b1014d342365e9c",
+                  "name": "fb738a3d19b4bbed5981",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1186,7 +1074,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "ee1e74a5b0566ac0ba1d",
+                  "name": "7a8dbdd3031e611308b5",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1201,7 +1089,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "8e2bbea930062d7901b0",
+                  "name": "37774b101907dd785e9d",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1216,7 +1104,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "efde00803b28a9dbebda",
+                  "name": "01122e947e7b91619344",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1231,7 +1119,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "67603e30c246625c09cd",
+                  "name": "32198f0ea57db94e8331",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -1246,7 +1134,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "c6635f40175b99ec3330",
+                  "name": "bd0ae925a66dccc0e3bc",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1261,7 +1149,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "37adf0445335b1040c86",
+                  "name": "00a69be62cd009e07e82",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1276,7 +1164,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "7872d1db83e77696981c",
+                  "name": "d59bb6004d7762c6d316",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1424,7 +1312,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "dded377a15e110a7cb05",
+                  "name": "7396c4c07e44e93ecc80",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1439,7 +1327,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "020074af28bb546e0838",
+                  "name": "16fe7bbb00d0ae81d310",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1454,7 +1342,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "d9180555d06090a0421c",
+                  "name": "04d0bfe8601a610deca2",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1490,50 +1378,20 @@
               ]
             }
           },
-          "1db9a3a26475b3d4571d": {
+          "e8e1c673abf0f9d0548f": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "e86f412e6a190aa22b5a",
+                  "name": "6c504d7c5837056d3118",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
+                          "Entity": "TB_CLIENTE"
                         }
                       },
-                      "Property": "Ano-Mes"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "b7c2a442963a41ac6cc8",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Sem Positivacao"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "e2382b980933cee2815a",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Positivados"
+                      "Property": "Nome"
                     }
                   },
                   "howCreated": 0
@@ -1541,18 +1399,89 @@
               ]
             },
             "singleVisual": {
-              "visualType": "clusteredColumnChart",
-              "objects": {},
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
               "activeProjections": {
-                "Category": [
+                "Values": [
                   {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
+                          "Entity": "TB_CLIENTE"
                         }
                       },
-                      "Property": "Ano-Mes"
+                      "Property": "Nome"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f7dafe0801a712029153": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6bcc374c6b0649c70383",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "DESCRICAO_PRODUTO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "DESCRICAO_PRODUTO"
                     }
                   }
                 ]
@@ -1563,7 +1492,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "6ace7d705dbe184402c9",
+                  "name": "4955c86020d840080508",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1578,7 +1507,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "be62b29a7b288b991d7c",
+                  "name": "0f0287c70eb1c12ad644",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1593,7 +1522,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "d7ec9fc679c20b60301b",
+                  "name": "7a597fc06ad2613793ae",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1608,7 +1537,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "6f4b55e7c0e403b2e7d6",
+                  "name": "0b292657ca40691bce5d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1623,7 +1552,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "cbc87f220703e7978b32",
+                  "name": "a87c8e06d8241d04b259",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1716,447 +1645,11 @@
               ]
             }
           },
-          "f548440c0ff1c348b2ff": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "0e6c24679e58bb305b77",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "xCliente"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "5fcc81878d0bd3e734a1",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Ultima Venda"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "c6e3bd20163cde953074",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Dias Sem Compra"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "4797473559037d8d3d50",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Total Faturado ao longo do tempo"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "c87822ef8987b325cd92",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Media Mensal ao longo do tempo"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "5827f3502b51ce22a997",
-                  "type": "Advanced",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "_",
-                        "Entity": "_Medidas",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "_"
-                                  }
-                                },
-                                "Property": "AUXFILTRO"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "1L"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "AUXFILTRO"
-                    }
-                  },
-                  "howCreated": 1
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "Media Mensal ao longo do tempo"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_CLIENTE"
-                        }
-                      },
-                      "Property": "xCliente"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_CLIENTE.xCliente"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": []
-                  }
-                }
-              ]
-            }
-          },
-          "f2fdfa188363634908d8": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "a9a916779909a031b275",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "7cf5f70837da550342e5",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "DESCRICAO_PRODUTO"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "07ca762ba422ce839b30",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "3e82763605c690439050",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Medidas"
-                        }
-                      },
-                      "Property": "TOTAL_FATURADO"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "TB_PRODUTO"
-                        }
-                      },
-                      "Property": "GRUPO_ITEM"
-                    }
-                  }
-                ],
-                "Columns": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano-Mes"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.GRUPO_ITEM"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "TB_PRODUTO"
-                              }
-                            },
-                            "Property": "GRUPO_ITEM"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "TB_PRODUTO.DESCRICAO_PRODUTO"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": null
-                  }
-                }
-              ]
-            }
-          },
-          "c924de21d1c2b4b07853": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "bf6d62a308064530a7de",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "c",
-                                "Entity": "CALENDARIO DAX",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "c"
-                                            }
-                                          },
-                                          "Property": "Ano"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "2026L"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Basic'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "CALENDARIO DAX"
-                        }
-                      },
-                      "Property": "Ano"
-                    }
-                  }
-                ]
-              },
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
           "12445b3e22aae471cc78": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "66e2ce9f731e611152d3",
+                  "name": "46cec0350a92ac062234",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -2176,53 +1669,6 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "s",
-                                "Entity": "Senhas",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "s"
-                                            }
-                                          },
-                                          "Property": "ID"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'Vendas'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
                   "data": [
                     {
                       "properties": {
@@ -2272,11 +1718,92 @@
               }
             }
           },
+          "1db9a3a26475b3d4571d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ded29d1127d9044d6d52",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1744380e4e00d687c274",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Sem Positivacao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4ae5914b416d1bab0444",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Positivados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "35acb410d2b0669a0edb": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "52fa132aa40d946be294": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
           "68edd2575a819c659450": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "f2e3fdb5ca6008a07505",
+                  "name": "c1ab4f05c5a1eee844bc",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -2386,6 +1913,524 @@
                     }
                   }
                 ]
+              }
+            }
+          },
+          "b02333ea1704430e1422": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "b5bf2a1267576c501181": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "c924de21d1c2b4b07853": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0471a813697ee7609032",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "c",
+                                "Entity": "CALENDARIO DAX",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "c"
+                                            }
+                                          },
+                                          "Property": "Ano"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "2026L"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "ce82c6560cb11648a2d8": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d5dee193a6745aab66aa": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "f2fdfa188363634908d8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "48979357994d0475882c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e7094bcd520e3d18385d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4b50f5b43acc17a08ed7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "DESCRICAO_PRODUTO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ff35f8ea1a0c5a5202c0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "TOTAL_FATURADO"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CALENDARIO DAX"
+                        }
+                      },
+                      "Property": "Ano-Mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_PRODUTO"
+                        }
+                      },
+                      "Property": "GRUPO_ITEM"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.GRUPO_ITEM"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "TB_PRODUTO"
+                              }
+                            },
+                            "Property": "GRUPO_ITEM"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "TB_PRODUTO.DESCRICAO_PRODUTO"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "f548440c0ff1c348b2ff": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5827f3502b51ce22a997",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "_",
+                        "Entity": "_Medidas",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "_"
+                                  }
+                                },
+                                "Property": "AUXFILTRO"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "AUXFILTRO"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "1ee5820186d2de0a9034",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "xCliente"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fea3ec9600eb6ae00082",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Ultima Venda"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f2b92d485c7810980bd0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Dias Sem Compra"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "91519a4ee24320571010",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total Faturado ao longo do tempo"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ee4448913051773aaca6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Media Mensal ao longo do tempo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Media Mensal ao longo do tempo"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TB_CLIENTE"
+                        }
+                      },
+                      "Property": "xCliente"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "TB_CLIENTE.xCliente"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "20bdac1e1e4be75e10d1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e37f95e150437898e5a5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Senha Representante"
+                        }
+                      },
+                      "Property": "Representante"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Senha Representante"
+                        }
+                      },
+                      "Property": "Representante"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
               }
             }
           }

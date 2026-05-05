@@ -12,5 +12,6 @@
   "visualGroup": {
     "displayName": "Positivação",
     "groupMode": "ScaleMode"
-  }
+  },
+  "isHidden": true
 }

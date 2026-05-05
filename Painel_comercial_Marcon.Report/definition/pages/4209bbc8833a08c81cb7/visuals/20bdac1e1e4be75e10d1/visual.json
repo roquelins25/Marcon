@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "75f25d5740110d2ad471",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "20bdac1e1e4be75e10d1",
   "position": {
-    "x": 103.6245185329112,
-    "y": 325.961848376441,
-    "z": 4000,
-    "height": 40.928074245939676,
-    "width": 266.45011600928075,
-    "tabOrder": 4000
+    "x": 534.58304617505166,
+    "y": 0,
+    "z": 15000,
+    "height": 40.578911095796,
+    "width": 266.40937284631292,
+    "tabOrder": 8006
   },
   "visual": {
     "visualType": "slicer",
@@ -20,35 +20,18 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Senhas"
+                      "Entity": "Senha Representante"
                     }
                   },
-                  "Property": "ID"
+                  "Property": "Representante"
                 }
               },
-              "queryRef": "Senhas.ID",
-              "nativeQueryRef": "ID",
+              "queryRef": "Senha Representante.Representante",
+              "nativeQueryRef": "Representante",
               "active": true
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Senhas"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -120,45 +103,11 @@
       "general": [
         {
           "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "s",
-                    "Entity": "Senhas",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "s"
-                                }
-                              },
-                              "Property": "ID"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Vendas'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
               }
             }
           }
@@ -185,7 +134,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'ADM'"
+                  "Value": "'RCA'"
                 }
               }
             }
@@ -194,7 +143,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "ID",
+      "groupName": "Representante",
       "fieldChanges": true,
       "filterChanges": true
     },

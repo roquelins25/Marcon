@@ -2959,7 +2959,7 @@
                     }
                   },
                   {
-                    "A.A": {
+                    "Ano Anterior": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2969,7 +2969,7 @@
                     }
                   },
                   {
-                    "Ano Anterior": {
+                    "A.A": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -3022,7 +3022,7 @@
                     }
                   },
                   {
-                    "FATURADO": {
+                    "Ano Selecionado": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -3032,7 +3032,7 @@
                     }
                   },
                   {
-                    "Ano Selecionado": {
+                    "Faturado": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -3111,17 +3111,7 @@
                     }
                   },
                   {
-                    "DESAFIO": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Meta": {
+                    "Desafio": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -3132,6 +3122,16 @@
                   },
                   {
                     "Metas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Meta": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5309,7 +5309,7 @@
                     }
                   },
                   {
-                    "Cliente": {
+                    "Nome Cliente": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5319,7 +5319,7 @@
                     }
                   },
                   {
-                    "Nome Cliente": {
+                    "Cliente": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -13392,7 +13392,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"VVPLbtswEPwVwuccTPF9pEXWZkyRCSUZiI0cAjSHAEUCuB/RD+uPlbukivYikLvU7uzM7O22o3L3sLNxsaHUAxda7F4fbjth6s35MHsyljAvIdkaoEIZTCvMxjHkehgE1xil8NPRlzmnemCCKQxLVm+jXYJNniy+FD9DKzpITDNdb092jZmMfrYAQ3DaYHBAt9g0Fu+glRSatQSU9HGGoOJiaKD39TbZMJ5zIo+n+jnHPOf5HGpcqz1tryigXEM8+TJVQNb5lUy+DlsyADO81kFg0CS8fZLD+/3z7f79AwCYDkBClZIPdVZyzOn3LxsvbS61USjqzbtwsdFl4jx5Xq2rLcjJpxKeVw8cyX3nCKCXMNpS35bsSjjivIa3dgMQcQyxUzvQ/tuA6oVKbLTXqy1+WWBYbmQnELi3948fP78+yfh1v79/vAEZXDYyKIBsCluoPOiu5QAJZ1PwEXDojkNoDJeIr43aNz9wDPuEAElcw5Wc13QFcShv4sjGBshLWbcRA8P4GOY8wVRKN0dwhcPmS20Pz/ddEA6CPNopFPJUaV2WjJ40rZjAbLaZoJkAnqD9R4Op0U+2EGfJHOIF/KwEa+AYdDz7GF/QuKqxy4CD5DvpUsrOAUPpU9M1TyEd0Tham95O4IPaxSdQ2RjdIEpMBFf1gsHYfpMR6DuUNUG9mcw2LVhxYKypoXCFor9sy8VZ3x4FDvDVORn3ZuANAcVNKGP+b9UU9Ad1/hVB4T7YQ+lSb5ZTwEmVwG09/26QMjify/HbZtYVvW/0VhMGsmU5raW5YcyxuvSIKwz1X/8A\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [ID = _t, Representante = _t, Senha = _t]),",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"VVPLbtwwDPwVYc852NbLOnItdVdZWUple4FukEOA5hCgSIDtR/TD+mMVKbloL4ZEyuRwZvj8fOjV4eEAYQWfy0HIUR5eHp4P0pSbdX5xbMp+WX2EEuilNpTWlA2TT+UwSDFStMefTi4vKZYDl1xTWPFym2D1EB1bXc5uwVb9oCjNx3J7gi0kNrkFEIYUfYUhEN0KccrOYislR14TWNKFBYNayKGC7sptBj9dUmSP5/K5hLSk5eJLfNRdX1/1iHLz4ezyXACBdRubXRk2JwRmRKlDwLCJf/1gx7f7x+v9+zsCMA2Awio5Hcus7JTi718QrnUuvVMoy81Zf4VgE7OOfd3Alhbs7GL2XzeHHKmucYTQs58gl7c52exPNK8Rtd2ARJx8aNQOffttIPV8ITbA7QbZrSsOK4xqBCL3cH//8fPzg02f9/vb+yuSIVQlo0eQVWHAysPYtBwwYSF6FxDH2HDIkcI50Guju+oHQWEXCSALm7+xyxZvKE4vqjiqsoHy9rzZiKNhXPBLmnEqPVZHCE3Dpmtpj8+7JohAQR5h9pk9FVrXNZEnTS0mKZsgMTITwpN9+9FQanIzZGaBLT5c0c9a8gqOY8eLC+EbGVdXdjlyEF0jXSnVOOAkfay6ptnHExlnHE1rJ+lB6eIiqmzMWCEqSnhb9MLBeLfLiPQd8xax3sIWiCtVHDivamhaoeCu+3IJ3rZHowNccU6ivRlERdDTJuQp/bdqGvujOv+KoGkf4Jib1LvlNHJSJLB7z78bpA3NZ1P4spt1I++bca+JA0Fez1uubphSKC490Qq3+qajmWCzHtgMxfrIiZRFx5eXPw==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [ID = _t, Representante = _t, Senha = _t]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"ID\", Int64.Type}, {\"Senha\", Int64.Type}}),",
                 "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([Representante] <> \"Arilson Correia\" and [Representante] <> \"BRUNO DOS SANTOS\" and [Representante] <> \"CATIANE TERRES\" and [Representante] <> \"CRISTIAN\" and [Representante] <> \"DANIEL\" and [Representante] <> \"DENILSON LUIZ KUNZ\" and [Representante] <> \"EDIR\" and [Representante] <> \"GIOVANI\" and [Representante] <> \"GUILHERME TADEU MEDEIROS\" and [Representante] <> \"Ian Bernardi\" and [Representante] <> \"JAMIR PIVATTO\" and [Representante] <> \"JOAO PAULO\" and [Representante] <> \"MAICKON JHON KLOSOSKI\" and [Representante] <> \"NELSON\" and [Representante] <> \"RICARDO RODRIGO\" and [Representante] <> \"ROSILENE\"))",
                 "in",
