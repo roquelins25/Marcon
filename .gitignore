@@ -1,2 +1,12 @@
+# Power BI cache
 **/.pbi/localSettings.json
-**/.pbi/cache.abfdesktop.ini
+**/.pbi/cache.abf
+
+# Windows
+desktop.ini
+Thumbs.db
+*.tmp
+
+# Power BI temp files (opcional, mas recomendado)
+*.pbix.tmp
+*.pbit.tmp
