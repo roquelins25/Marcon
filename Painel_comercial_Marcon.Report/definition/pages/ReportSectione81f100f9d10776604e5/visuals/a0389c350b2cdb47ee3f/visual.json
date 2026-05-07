@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "66fb89aa3e03776e02a1",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "a0389c350b2cdb47ee3f",
   "position": {
-    "x": 191.52,
-    "y": 501.12,
-    "z": 4000,
-    "height": 40.32,
-    "width": 41.76,
-    "tabOrder": 5000
+    "x": 82.039972432804959,
+    "y": 415.49276361130256,
+    "z": 9001,
+    "height": 39.696760854583047,
+    "width": 287.58097863542383,
+    "tabOrder": 9001
   },
   "visual": {
     "visualType": "actionButton",
@@ -67,7 +67,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'WebUrl'"
+                  "Value": "'PageNavigation'"
                 }
               }
             },
@@ -76,17 +76,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Senhas"
+                      "Entity": "ValorSenha"
                     }
                   },
-                  "Property": "CHECK"
-                }
-              }
-            },
-            "webUrl": {
-              "expr": {
-                "Literal": {
-                  "Value": "'https://wa.me/5548991648722?text=Ol%C3%A1%2C+'"
+                  "Property": "xAcesso"
                 }
               }
             }

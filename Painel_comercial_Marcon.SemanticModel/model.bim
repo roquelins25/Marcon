@@ -8,7 +8,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"MEG_EXCEL_CAMPANHA\",\"META\",\"_Medidas\",\"Data_Atualização\",\"Senha Representante\",\"D_REP\",\"Senhas\",\"TB_PRODUTO\",\"TB_Fornecedor\",\"TB_CLIENTE\",\"yTBAux\"]"
+        "value": "[\"MEG_EXCEL_CAMPANHA\",\"META\",\"_Medidas\",\"Data_Atualização\",\"D_REP\",\"TB_PRODUTO\",\"TB_Fornecedor\",\"TB_CLIENTE\",\"yTBAux\",\"TB_Acess\",\"TB_AcssREP\"]"
       },
       {
         "name": "__TEdtr",
@@ -484,19 +484,7 @@
                     "ConceptualProperty": "DIAS_PERCORRIDOS"
                   }
                 },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "DIAS PERCORRIDOS": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
+                "State": "Generated"
               },
               "calendario_dax.dias_semana": {
                 "Definition": {
@@ -528,19 +516,7 @@
                     "ConceptualProperty": "DIAS_UTEIS"
                   }
                 },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "DIAS UTEIS": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
+                "State": "Generated"
               },
               "calendario_dax.mes_atual": {
                 "Definition": {
@@ -627,19 +603,7 @@
                     "ConceptualProperty": "Nome do Mês"
                   }
                 },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Mês": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
+                "State": "Generated"
               },
               "calendario_dax.order_by": {
                 "Definition": {
@@ -1349,16 +1313,6 @@
                     "Volume_Ultimo pedido": {
                       "State": "Generated"
                     }
-                  },
-                  {
-                    "QTD_Ultimo Pedido": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -1625,16 +1579,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Data Ultima Compra": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -1992,16 +1936,6 @@
                       "Type": "Noun",
                       "Weight": 0.582
                     }
-                  },
-                  {
-                    "%Desafio": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -2024,16 +1958,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "DESAFIO": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   },
                   {
@@ -2067,16 +1991,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "Desafio": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2113,16 +2027,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Desafio": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2165,16 +2069,6 @@
                   {
                     "positivados": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "Positivado": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2326,16 +2220,6 @@
                       "State": "Generated",
                       "Weight": 0.97
                     }
-                  },
-                  {
-                    "Sem Atendimento": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -2429,16 +2313,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Sem Atendimento": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2643,16 +2517,6 @@
                     }
                   },
                   {
-                    "Tend": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "Tendência": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -2779,16 +2643,6 @@
                       "Type": "Noun",
                       "Weight": 0.605
                     }
-                  },
-                  {
-                    "Ano Ante.": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -2824,16 +2678,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Ano Atual": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -2967,16 +2811,6 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
-                  },
-                  {
-                    "A.A": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -3019,16 +2853,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Ano Selecionado": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   },
                   {
@@ -3108,16 +2932,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  },
-                  {
-                    "Desafio": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   },
                   {
@@ -3530,16 +3344,6 @@
                       "Type": "Noun",
                       "Weight": 0.475
                     }
-                  },
-                  {
-                    "Cliente": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -3744,16 +3548,6 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
-                  },
-                  {
-                    "Produto": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ],
                 "Visibility": {
@@ -3884,16 +3678,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.727
-                    }
-                  },
-                  {
-                    "Grupo": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4091,16 +3875,6 @@
                     "fantasia": {
                       "State": "Generated",
                       "Weight": 0.97
-                    }
-                  },
-                  {
-                    "Cliente": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4695,366 +4469,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.476
-                    }
-                  }
-                ]
-              },
-              "senha": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "senha": {
-                      "State": "Generated",
-                      "Weight": 0.87
-                    }
-                  }
-                ]
-              },
-              "senha.ID": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas",
-                    "ConceptualProperty": "ID"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "ID": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "identification": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "identity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "credential": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  }
-                ]
-              },
-              "senha.check": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas",
-                    "ConceptualProperty": "CHECK"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "check": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "cheque": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "checkup": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "inspection": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "test": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "tick": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "bill": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "safety inspection": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.571
-                    }
-                  },
-                  {
-                    "safety test": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.571
-                    }
-                  }
-                ]
-              },
-              "senha.id_vendedor": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas",
-                    "ConceptualProperty": "ID_VENDEDOR"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "id vendedor": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "ID_VENDEDOR": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "identification vendedor": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "identity vendedor": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "identifier vendedor": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "credential vendedor": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "senha.representante": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas",
-                    "ConceptualProperty": "REPRESENTANTE"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "representante": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "senha.senha": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senhas",
-                    "ConceptualProperty": "SENHA"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "senha": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "senha_representante": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senha Representante"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "senha representante": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "senha_representante.ID": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senha Representante",
-                    "ConceptualProperty": "ID"
-                  }
-                },
-                "NameType": "Identifier",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "ID": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "identification": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "identity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "credential": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  }
-                ]
-              },
-              "senha_representante.representante": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senha Representante",
-                    "ConceptualProperty": "Representante"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "representante": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "senha_representante.senha": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Senha Representante",
-                    "ConceptualProperty": "Senha"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "senha": {
-                      "State": "Generated"
                     }
                   }
                 ]
@@ -9886,362 +9300,6 @@
                 },
                 "State": "Generated"
               },
-              "senha_has_ID": {
-                "Binding": {
-                  "ConceptualEntity": "Senhas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.ID"
-                      },
-                      "Subject": {
-                        "Role": "senha"
-                      }
-                    },
-                    "ID": "senhas_have_ID",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha": {
-                    "Target": {
-                      "Entity": "senha"
-                    }
-                  },
-                  "senha.ID": {
-                    "Target": {
-                      "Entity": "senha.ID"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_has_check": {
-                "Binding": {
-                  "ConceptualEntity": "Senhas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.check"
-                      },
-                      "Subject": {
-                        "Role": "senha"
-                      }
-                    },
-                    "ID": "senhas_have_check",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha": {
-                    "Target": {
-                      "Entity": "senha"
-                    }
-                  },
-                  "senha.check": {
-                    "Target": {
-                      "Entity": "senha.check"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_has_d_rep": {
-                "Binding": {
-                  "ConceptualEntity": "Senhas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_rep"
-                      },
-                      "Subject": {
-                        "Role": "senha"
-                      }
-                    },
-                    "ID": "senhas_have_d_reps",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha"
-                      },
-                      "Subject": {
-                        "Role": "d_rep"
-                      }
-                    },
-                    "ID": "d_reps_have_senhas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_rep": {
-                    "Target": {
-                      "Entity": "d_rep"
-                    }
-                  },
-                  "senha": {
-                    "Target": {
-                      "Entity": "senha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_has_representante": {
-                "Binding": {
-                  "ConceptualEntity": "Senhas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.representante"
-                      },
-                      "Subject": {
-                        "Role": "senha"
-                      }
-                    },
-                    "ID": "senhas_have_representantes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha": {
-                    "Target": {
-                      "Entity": "senha"
-                    }
-                  },
-                  "senha.representante": {
-                    "Target": {
-                      "Entity": "senha.representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_has_senha": {
-                "Binding": {
-                  "ConceptualEntity": "Senhas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.senha"
-                      },
-                      "Subject": {
-                        "Role": "senha"
-                      }
-                    },
-                    "ID": "senhas_have_senhas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha": {
-                    "Target": {
-                      "Entity": "senha"
-                    }
-                  },
-                  "senha.senha": {
-                    "Target": {
-                      "Entity": "senha.senha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_has_ID": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha_representante.ID"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_ID",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "ID_are_names_IDs_of_senha_representantes",
-                    "Name": {
-                      "Name": {
-                        "Role": "senha_representante.ID"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  },
-                  "senha_representante.ID": {
-                    "Target": {
-                      "Entity": "senha_representante.ID"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_has_d_rep": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_rep"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_d_reps",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_rep": {
-                    "Target": {
-                      "Entity": "d_rep"
-                    }
-                  },
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_has_representante": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha_representante.representante"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_representantes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  },
-                  "senha_representante.representante": {
-                    "Target": {
-                      "Entity": "senha_representante.representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_has_senha": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha_representante.senha"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_senhas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  },
-                  "senha_representante.senha": {
-                    "Target": {
-                      "Entity": "senha_representante.senha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "senha_representante_has_senha_check": {
-                "Binding": {
-                  "ConceptualEntity": "Senha Representante"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.check"
-                      },
-                      "Subject": {
-                        "Role": "senha_representante"
-                      }
-                    },
-                    "ID": "senha_representantes_have_check",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha.check": {
-                    "Target": {
-                      "Entity": "senha.check"
-                    }
-                  },
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "tb_cliente_has_bairro": {
                 "Binding": {
                   "ConceptualEntity": "TB_CLIENTE"
@@ -11852,6 +10910,17 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ],
+        "folder": "xSenhas"
+      }
+    ],
     "relationships": [
       {
         "name": "8858a3b0-79f5-c6a7-4876-2f6bd2461aa1",
@@ -11864,23 +10933,6 @@
         "name": "821b8bab-54e9-6cc4-61b6-ad6b41006849",
         "fromColumn": "ID_VENDEDOR",
         "fromTable": "MEG_EXCEL_CAMPANHA",
-        "toColumn": "ID_VENDEDOR",
-        "toTable": "D_REP"
-      },
-      {
-        "name": "f320a2fe-ad4c-016b-24dd-07c05a7636cd",
-        "crossFilteringBehavior": "bothDirections",
-        "fromCardinality": "one",
-        "fromColumn": "ID",
-        "fromTable": "Senha Representante",
-        "toColumn": "ID_VENDEDOR",
-        "toTable": "D_REP"
-      },
-      {
-        "name": "1f868ae4-9597-0fee-fc18-bbccbb9c4276",
-        "crossFilteringBehavior": "bothDirections",
-        "fromColumn": "ID_VENDEDOR",
-        "fromTable": "Senhas",
         "toColumn": "ID_VENDEDOR",
         "toTable": "D_REP"
       },
@@ -11926,6 +10978,22 @@
         "fromTable": "MEG_EXCEL_CAMPANHA",
         "toColumn": "Codigo",
         "toTable": "TB_CLIENTE"
+      },
+      {
+        "name": "e193b03c-5f50-3542-9025-9db8258306ec",
+        "fromColumn": "ID_VENDEDOR",
+        "fromTable": "D_REP",
+        "toCardinality": "many",
+        "toColumn": "ID_VENDEDOR",
+        "toTable": "TB_Acess"
+      },
+      {
+        "name": "50fb8eae-f85e-67a7-288e-6e3496ce756f",
+        "fromColumn": "ID_VENDEDOR",
+        "fromTable": "D_REP",
+        "toCardinality": "many",
+        "toColumn": "ID_Vendedor",
+        "toTable": "TB_AcssREP"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -13316,6 +12384,18 @@
             "expression": "SELECTEDVALUE('ValorSenha'[ValorSenha], 0)",
             "formatString": "0",
             "lineageTag": "62a119b8-3403-410b-802b-f4757a9f8b89"
+          },
+          {
+            "name": "xAcesso",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    HASONEFILTER( TB_Acess[ID] ) && ValorSenha[Valor ValorSenha] = MAX( TB_Acess[SENHA] ), \"Home\",",
+              "    HASONEFILTER( TB_AcssREP[Representante] ) && ValorSenha[Valor ValorSenha] = MAX( TB_AcssREP[Senha] ), \"Home\",",
+              "    \"Senha Errada\" )"
+            ],
+            "lineageTag": "bb5cdeb8-e8d2-4e2a-abf7-9ee6f32f106c"
           }
         ],
         "partitions": [
@@ -13325,80 +12405,6 @@
             "source": {
               "expression": "GENERATESERIES(1, 9999, 1)",
               "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Senha Representante",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Representante",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bb71777f-7506-4835-851a-711aae4608f4",
-            "sourceColumn": "Representante",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Senha",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "ba023e95-d11d-452e-a3f6-2e0e71b9233b",
-            "sourceColumn": "Senha",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "1c140583-5905-4a1a-9278-2ee28cc063e2",
-            "sourceColumn": "ID",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "e8fa4e8d-805a-4062-839e-70ca949f6a89",
-        "partitions": [
-          {
-            "name": "Senha Representante",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"VVPLbtwwDPwVYc852NbLOnItdVdZWUple4FukEOA5hCgSIDtR/TD+mMVKbloL4ZEyuRwZvj8fOjV4eEAYQWfy0HIUR5eHp4P0pSbdX5xbMp+WX2EEuilNpTWlA2TT+UwSDFStMefTi4vKZYDl1xTWPFym2D1EB1bXc5uwVb9oCjNx3J7gi0kNrkFEIYUfYUhEN0KccrOYislR14TWNKFBYNayKGC7sptBj9dUmSP5/K5hLSk5eJLfNRdX1/1iHLz4ezyXACBdRubXRk2JwRmRKlDwLCJf/1gx7f7x+v9+zsCMA2Awio5Hcus7JTi718QrnUuvVMoy81Zf4VgE7OOfd3Alhbs7GL2XzeHHKmucYTQs58gl7c52exPNK8Rtd2ARJx8aNQOffttIPV8ITbA7QbZrSsOK4xqBCL3cH//8fPzg02f9/vb+yuSIVQlo0eQVWHAysPYtBwwYSF6FxDH2HDIkcI50Guju+oHQWEXCSALm7+xyxZvKE4vqjiqsoHy9rzZiKNhXPBLmnEqPVZHCE3Dpmtpj8+7JohAQR5h9pk9FVrXNZEnTS0mKZsgMTITwpN9+9FQanIzZGaBLT5c0c9a8gqOY8eLC+EbGVdXdjlyEF0jXSnVOOAkfay6ptnHExlnHE1rJ+lB6eIiqmzMWCEqSnhb9MLBeLfLiPQd8xax3sIWiCtVHDivamhaoeCu+3IJ3rZHowNccU6ivRlERdDTJuQp/bdqGvujOv+KoGkf4Jib1LvlNHJSJLB7z78bpA3NZ1P4spt1I++bca+JA0Fez1uubphSKC490Qq3+qajmWCzHtgMxfrIiZRFx5eXPw==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [ID = _t, Representante = _t, Senha = _t]),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"ID\", Int64.Type}, {\"Senha\", Int64.Type}}),",
-                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([Representante] <> \"Arilson Correia\" and [Representante] <> \"BRUNO DOS SANTOS\" and [Representante] <> \"CATIANE TERRES\" and [Representante] <> \"CRISTIAN\" and [Representante] <> \"DANIEL\" and [Representante] <> \"DENILSON LUIZ KUNZ\" and [Representante] <> \"EDIR\" and [Representante] <> \"GIOVANI\" and [Representante] <> \"GUILHERME TADEU MEDEIROS\" and [Representante] <> \"Ian Bernardi\" and [Representante] <> \"JAMIR PIVATTO\" and [Representante] <> \"JOAO PAULO\" and [Representante] <> \"MAICKON JHON KLOSOSKI\" and [Representante] <> \"NELSON\" and [Representante] <> \"RICARDO RODRIGO\" and [Representante] <> \"ROSILENE\"))",
-                "in",
-                "    #\"Linhas Filtradas\""
-              ],
-              "type": "m"
             }
           }
         ]
@@ -13460,7 +12466,8 @@
                 "    #\"Colunas Renomeadas\" = Table.RenameColumns(MEG_EXCEL_CAMPANHA_,{{\"VENDEDOR\", \"REPRESENTANTE\"}}),",
                 "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Colunas Renomeadas\",{\"ID_VENDEDOR\", \"REPRESENTANTE\"}),",
                 "    #\"Duplicatas Removidas\" = Table.Distinct(#\"Outras Colunas Removidas\", {\"ID_VENDEDOR\"}),",
-                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Duplicatas Removidas\", each [ID_VENDEDOR] <> null and [ID_VENDEDOR] <> \"\")",
+                "    #\"Linhas Classificadas\" = Table.Sort(#\"Duplicatas Removidas\",{{\"REPRESENTANTE\", Order.Ascending}}),",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Linhas Classificadas\", each [ID_VENDEDOR] <> null and [ID_VENDEDOR] <> \"\")",
                 "in",
                 "    #\"Linhas Filtradas\""
               ],
@@ -13594,115 +12601,6 @@
                 "UNION( vDIASEMANA,vMEDIA )"
               ],
               "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Senhas",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "26f868b2-3f87-4fa1-ba97-3337f94bdab8",
-            "sourceColumn": "ID",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "SENHA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "f8b73a3b-b8c0-44c6-8089-b893d27dbc12",
-            "sourceColumn": "SENHA",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "ID_VENDEDOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "be711cf7-f596-49f8-8bea-70d469c90a47",
-            "sourceColumn": "ID_VENDEDOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "REPRESENTANTE",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8b1ae5ca-21c4-43a4-8227-8f6d93b20815",
-            "sourceColumn": "REPRESENTANTE",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "b6ebf2a7-1626-4454-89cb-ead1ab88f686",
-        "measures": [
-          {
-            "name": "CHECK",
-            "expression": [
-              "",
-              "SWITCH(",
-              "    TRUE(),",
-              "    HASONEFILTER(Senhas[ID]) && ValorSenha[Valor ValorSenha] = MAX(Senhas[SENHA]),\"MES_ATUAL\",",
-              "    HASONEFILTER('Senha Representante'[Representante]) && ValorSenha[Valor ValorSenha] = MAX('Senha Representante'[Senha]),\"MES_ATUAL\",",
-              "    \"Senha Errada\")"
-            ],
-            "lineageTag": "161a5d46-5007-43e1-a9ca-8d8c3fa61e3c"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "Senhas",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Excel.Workbook(Web.Contents(\"https://docs.google.com/spreadsheets/d/e/2PACX-1vS3TzbjK874iIyRk541EM3-uGX46Lv_Pm0NAK54wUULEJhW7xBPWbI-xHI7lpOquA/pub?output=xlsx\"), null, true),",
-                "    Sheet1_Sheet = Fonte{[Item=\"Sheet1\",Kind=\"Sheet\"]}[Data],",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),",
-                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Cabeçalhos Promovidos\", each ([ID] <> null)),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Linhas Filtradas\",{{\"ID\", type text}, {\"REPRESENTANTE\", type text}, {\"SENHA\", type number}, {\"ID_VENDEDOR\", type number}})",
-                "in",
-                "    #\"Tipo Alterado\""
-              ],
-              "type": "m"
             }
           }
         ]
@@ -14719,6 +13617,202 @@
                 "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUQrJT8kvVorViVYyAvJiSg0MjJMVjA0UXDITIcLGQGEoXyFRwQxJxgQoYwaXsUSSMYUZlYoQjgUA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Ordem = _t, Desc = _t])",
                 "in",
                 "    Fonte"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "TB_Acess",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8b51c832-031d-4bb8-aeb6-1029323d5e13",
+            "sourceColumn": "ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SENHA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7ca7a1c1-cb26-4a5b-9a79-d28f6b753796",
+            "sourceColumn": "SENHA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ID_VENDEDOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f171154d-50a9-4636-b4f8-af04bddcfff7",
+            "sourceColumn": "ID_VENDEDOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "REPRESENTANTE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "216011f4-5788-4531-b319-2e1724155082",
+            "sourceColumn": "REPRESENTANTE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ativo / Inativo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9e133005-e9bd-4267-9ccf-bbf4d85b0d14",
+            "sourceColumn": "Ativo / Inativo",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "363d7e9c-e9d1-4616-b758-d5da02128590",
+        "partitions": [
+          {
+            "name": "TB_Acess",
+            "mode": "import",
+            "queryGroup": "xSenhas",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://docs.google.com/spreadsheets/d/e/2PACX-1vSrm3mrXZP6Pm9Kc41UQ6iAhAlrYRtBS0dJmX9L1LU5AyCSKOj3A41cbwcHBu1-IA/pub?output=xlsx\"), null, true),",
+                "    Acessos_Sheet = Fonte{[Item=\"Acessos\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Acessos_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"ID\", type text}, {\"SENHA\", Int64.Type}, {\"ID_VENDEDOR\", Int64.Type}, {\"REPRESENTANTE\", type text}, {\"Ativo / Inativo\", type text}}),",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([ID] <> null and [ID] <> \"\") and ([#\"Ativo / Inativo\"] = \"A\"))",
+                "in",
+                "    #\"Linhas Filtradas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "TB_AcssREP",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID_Vendedor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0f6ddc46-6bd9-4a31-bedc-1dee326440de",
+            "sourceColumn": "ID_Vendedor",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Representante",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b8c47021-e06c-47d0-aca8-4c25940b5302",
+            "sourceColumn": "Representante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Senha",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "68fd0038-ad6b-4670-9f02-753ddab43c4d",
+            "sourceColumn": "Senha",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "A/I",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b0e919b2-b8af-4e4b-b983-6218caac0425",
+            "sourceColumn": "A/I",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "02b38cad-831b-4e90-abce-461c662b4fd3",
+        "partitions": [
+          {
+            "name": "TB_AcssREP",
+            "mode": "import",
+            "queryGroup": "xSenhas",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://docs.google.com/spreadsheets/d/e/2PACX-1vSrm3mrXZP6Pm9Kc41UQ6iAhAlrYRtBS0dJmX9L1LU5AyCSKOj3A41cbwcHBu1-IA/pub?output=xlsx\"), null, true),",
+                "    Representantes_Sheet = Fonte{[Item=\"Representantes\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Representantes_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"ID_Vendedor\", Int64.Type}, {\"Representante\", type text}, {\"Senha\", type number}, {\"A/I\", type text}}),",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([ID_Vendedor] <> null and [ID_Vendedor] <> \"\") and ([#\"A/I\"] = \"A\"))",
+                "in",
+                "    #\"Linhas Filtradas\""
               ],
               "type": "m"
             }
