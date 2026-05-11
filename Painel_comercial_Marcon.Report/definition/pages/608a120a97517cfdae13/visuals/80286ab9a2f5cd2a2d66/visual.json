@@ -219,6 +219,18 @@
               "TB_CLIENTE.Nome"
             ],
             "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TB_CLIENTE"
+                    }
+                  },
+                  "Property": "Nome"
+                }
+              }
+            ],
             "isPinned": true
           },
           {

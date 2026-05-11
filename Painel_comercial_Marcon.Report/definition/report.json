@@ -11,40 +11,6 @@
       "type": "SharedResources"
     }
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "Filterd180bbc4581e7000696a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "D_REP"
-              }
-            },
-            "Property": "REPRESENTANTE"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User",
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
   "objects": {
     "section": [
       {
