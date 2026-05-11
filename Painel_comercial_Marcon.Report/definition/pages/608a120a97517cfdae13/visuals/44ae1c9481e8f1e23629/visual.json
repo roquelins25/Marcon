@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Senhas"
+                      "Entity": "TB_Acess"
                     }
                   },
                   "Property": "ID"
                 }
               },
-              "queryRef": "Senhas.ID",
+              "queryRef": "TB_Acess.ID",
               "nativeQueryRef": "ID",
               "active": true
             }

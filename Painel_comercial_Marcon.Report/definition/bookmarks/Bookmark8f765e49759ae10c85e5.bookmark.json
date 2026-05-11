@@ -120,12 +120,6 @@
               }
             }
           },
-          "14c951ac6eda9b121707": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "cb0b79f0015a88057501": {
             "filters": {
               "byExpr": [
@@ -174,24 +168,6 @@
                   }
                 }
               ]
-            }
-          },
-          "89a9acd421023477bed5": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "66fb89aa3e03776e02a1": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "253434960cee9ad8644b": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
             }
           },
           "239e3f895882968509a6": {

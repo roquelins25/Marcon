@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Senha Representante"
+                      "Entity": "TB_AcssREP"
                     }
                   },
                   "Property": "Representante"
                 }
               },
-              "queryRef": "Senha Representante.Representante",
+              "queryRef": "TB_AcssREP.Representante",
               "nativeQueryRef": "Representante",
               "active": true
             }
@@ -102,15 +102,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
