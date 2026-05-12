@@ -11629,6 +11629,12 @@
           },
           {
             "name": "TOTAL_FAT_A.A",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
             "displayFolder": "COMERCIAL",
             "expression": [
               "",
@@ -11637,6 +11643,7 @@
               "    SAMEPERIODLASTYEAR('Calendario DAX'[Date])",
               ")"
             ],
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "0954bf8d-59ed-44fb-ba1a-cef3e52fcbb1"
           },
           {
