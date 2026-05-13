@@ -150,11 +150,7 @@
                           [
                             {
                               "Literal": {
-<<<<<<< HEAD
                                 "Value": "'ADM'"
-=======
-                                "Value": "'VENDAS'"
->>>>>>> 0482453 (fix: Representantes/Ano Anterior)
                               }
                             }
                           ]
