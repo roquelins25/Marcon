@@ -141,10 +141,17 @@
                 }
               }
             },
-            "preferredCategoryWidth": {
+            "maxMarginFactor": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15L"
+                }
+              }
+            },
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
                 }
               }
             }
@@ -322,7 +329,7 @@
             "clusteredGapSize": {
               "expr": {
                 "Literal": {
-                  "Value": "19D"
+                  "Value": "15D"
                 }
               }
             }
@@ -412,17 +419,17 @@
                 }
               }
             },
-            "optimizeLabelDisplay": {
+            "enableBackground": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "enableBackground": {
+            "optimizeLabelDisplay": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -445,6 +452,13 @@
                 }
               }
             },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
@@ -462,7 +476,7 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'InsideCenter'"
+                  "Value": "'InsideBase'"
                 }
               }
             }
@@ -477,13 +491,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "labelPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'InsideBase'"
                 }
               }
             },
@@ -506,10 +513,10 @@
                 }
               }
             },
-            "fontSize": {
+            "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "true"
                 }
               }
             },
@@ -517,6 +524,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'InsideCenter'"
                 }
               }
             }
