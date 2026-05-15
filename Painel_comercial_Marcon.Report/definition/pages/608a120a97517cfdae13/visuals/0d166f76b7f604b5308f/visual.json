@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "0d166f76b7f604b5308f",
   "position": {
-    "x": 967.91848617176129,
-    "y": 135.08005822416303,
+    "x": 968.27586206896558,
+    "y": 133.00492610837438,
     "z": 1000,
-    "height": 55.895196506550214,
-    "width": 291.58660844250363,
+    "height": 60.295566502463053,
+    "width": 285.51724137931035,
     "tabOrder": 1000
   },
   "visual": {
@@ -48,14 +48,8 @@
                   "Value": "'Dropdown'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {
-            "selfFilterEnabled": {
+            },
+            "isInvertedSelectionMode": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -63,6 +57,11 @@
               }
             }
           }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
         }
       ],
       "header": [
@@ -102,6 +101,26 @@
             }
           }
         }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -125,6 +144,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'Representante'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
                 }
               }
             }
