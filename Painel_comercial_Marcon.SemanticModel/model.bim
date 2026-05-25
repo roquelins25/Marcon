@@ -31,6 +31,402 @@
               }
             },
             "Entities": {
+              "TB_acess": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TB acess": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TB_Acess": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "TB_acess.ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess",
+                    "ConceptualProperty": "ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "TB_acess.ativo___inativo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess",
+                    "ConceptualProperty": "Ativo / Inativo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ativo / inativo": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ativo": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "ativo inativo": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "inativo": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "TB_acess.id_vendedor": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess",
+                    "ConceptualProperty": "ID_VENDEDOR"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "id vendedor": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ID_VENDEDOR": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "identification vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identity vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identifier vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "credential vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "TB_acess.representante": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess",
+                    "ConceptualProperty": "REPRESENTANTE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "representante": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "TB_acess.senha": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_Acess",
+                    "ConceptualProperty": "SENHA"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "senha": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "TB_acss_REP": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_AcssREP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TB acss REP": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TB_AcssREP": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "tb acss agent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "tb acss representative": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "tb acss courier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "tb acss delegate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "tb acss deputy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  }
+                ]
+              },
+              "TB_acss_REP.ID_vendedor": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_AcssREP",
+                    "ConceptualProperty": "ID_Vendedor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ID vendedor": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ID_Vendedor": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "identification vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identity vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identifier vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "credential vendedor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "TB_acss_REP.a_i": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_AcssREP",
+                    "ConceptualProperty": "A/I"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "a/i": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "a i": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "/i": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "i": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "TB_acss_REP.representante": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_AcssREP",
+                    "ConceptualProperty": "Representante"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "representante": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "TB_acss_REP.senha": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TB_AcssREP",
+                    "ConceptualProperty": "Senha"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "senha": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "TB_fornecedor": {
                 "Definition": {
                   "Binding": {
@@ -477,15 +873,6 @@
                   }
                 ]
               },
-              "calendario_dax.dias_percorridos1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Calendario DAX",
-                    "ConceptualProperty": "DIAS_PERCORRIDOS"
-                  }
-                },
-                "State": "Generated"
-              },
               "calendario_dax.dias_semana": {
                 "Definition": {
                   "Binding": {
@@ -508,15 +895,6 @@
                     }
                   }
                 ]
-              },
-              "calendario_dax.dias_uteis": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Calendario DAX",
-                    "ConceptualProperty": "DIAS_UTEIS"
-                  }
-                },
-                "State": "Generated"
               },
               "calendario_dax.mes_atual": {
                 "Definition": {
@@ -595,15 +973,6 @@
                     }
                   }
                 ]
-              },
-              "calendario_dax.nome_do_mês": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Calendario DAX",
-                    "ConceptualProperty": "Nome do Mês"
-                  }
-                },
-                "State": "Generated"
               },
               "calendario_dax.order_by": {
                 "Definition": {
@@ -1037,7 +1406,10 @@
                       "Weight": 0.582
                     }
                   }
-                ]
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "d_rep.representante": {
                 "Definition": {
@@ -1961,7 +2333,7 @@
                     }
                   },
                   {
-                    "%Meta": {
+                    "%Obj.": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2484,7 +2856,7 @@
                     }
                   },
                   {
-                    "% Tend vs Meta": {
+                    "% Tend vs Objetivo": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -2935,17 +3307,7 @@
                     }
                   },
                   {
-                    "Metas": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Meta": {
+                    "Objetivo": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5154,6 +5516,29 @@
                   }
                 ]
               },
+              "valor_senha.x_acesso": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ValorSenha",
+                    "ConceptualProperty": "xAcesso"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "x acesso": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "xAcesso": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "x_param": {
                 "Definition": {
                   "Binding": {
@@ -5322,6 +5707,389 @@
             },
             "Language": "en-US",
             "Relationships": {
+              "TB_acess_has_ID": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acess.ID"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_ID",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "TB_acess.ID": {
+                    "Target": {
+                      "Entity": "TB_acess.ID"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acess_has_ativo___inativo": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acess.ativo___inativo"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_ativo___inativos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "TB_acess.ativo___inativo": {
+                    "Target": {
+                      "Entity": "TB_acess.ativo___inativo"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acess_has_id_vendedor": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acess.id_vendedor"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_ID_vendedors",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "TB_acess.id_vendedor": {
+                    "Target": {
+                      "Entity": "TB_acess.id_vendedor"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acess_has_representante": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acess.representante"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_representantes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "TB_acess.representante": {
+                    "Target": {
+                      "Entity": "TB_acess.representante"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acess_has_senha": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acess.senha"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_senhas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "TB_acess.senha": {
+                    "Target": {
+                      "Entity": "TB_acess.senha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acess_has_valor_senha_x_acesso": {
+                "Binding": {
+                  "ConceptualEntity": "TB_Acess"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "valor_senha.x_acesso"
+                      },
+                      "Subject": {
+                        "Role": "TB_acess"
+                      }
+                    },
+                    "ID": "TB_acesses_have_x_acesso",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
+                  "valor_senha.x_acesso": {
+                    "Target": {
+                      "Entity": "valor_senha.x_acesso"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acss_REP_has_ID_vendedor": {
+                "Binding": {
+                  "ConceptualEntity": "TB_AcssREP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acss_REP.ID_vendedor"
+                      },
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "ID": "TB_acss_REPs_have_ID_vendedors",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
+                    "Target": {
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "TB_acss_REP.ID_vendedor": {
+                    "Target": {
+                      "Entity": "TB_acss_REP.ID_vendedor"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acss_REP_has_a_i": {
+                "Binding": {
+                  "ConceptualEntity": "TB_AcssREP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acss_REP.a_i"
+                      },
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "ID": "TB_acss_REPs_have_a_i",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "TB_acss_REPs_are_a_a_i",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "TB_acss_REP.a_i"
+                      },
+                      "Prepositions": [
+                        {
+                          "a": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
+                    "Target": {
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "TB_acss_REP.a_i": {
+                    "Target": {
+                      "Entity": "TB_acss_REP.a_i"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acss_REP_has_representante": {
+                "Binding": {
+                  "ConceptualEntity": "TB_AcssREP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acss_REP.representante"
+                      },
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "ID": "TB_acss_REPs_have_representantes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
+                    "Target": {
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "TB_acss_REP.representante": {
+                    "Target": {
+                      "Entity": "TB_acss_REP.representante"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acss_REP_has_senha": {
+                "Binding": {
+                  "ConceptualEntity": "TB_AcssREP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acss_REP.senha"
+                      },
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "ID": "TB_acss_REPs_have_senhas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
+                    "Target": {
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "TB_acss_REP.senha": {
+                    "Target": {
+                      "Entity": "TB_acss_REP.senha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "TB_acss_REP_has_valor_senha_x_acesso": {
+                "Binding": {
+                  "ConceptualEntity": "TB_AcssREP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "valor_senha.x_acesso"
+                      },
+                      "Subject": {
+                        "Role": "TB_acss_REP"
+                      }
+                    },
+                    "ID": "TB_acss_REPs_have_x_acesso",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
+                    "Target": {
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "valor_senha.x_acesso": {
+                    "Target": {
+                      "Entity": "valor_senha.x_acesso"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "TB_fornecedor_has_fornecedor": {
                 "Binding": {
                   "ConceptualEntity": "TB_Fornecedor"
@@ -6477,7 +7245,7 @@
                 },
                 "State": "Generated"
               },
-              "d_rep_has_id_vendedor": {
+              "d_rep_has_TB_acess": {
                 "Binding": {
                   "ConceptualEntity": "D_REP"
                 },
@@ -6485,26 +7253,59 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "d_rep.id_vendedor"
+                        "Role": "TB_acess"
                       },
                       "Subject": {
                         "Role": "d_rep"
                       }
                     },
-                    "ID": "d_reps_have_id_vendedors",
+                    "ID": "d_reps_have_TB_acesses",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
+                  "TB_acess": {
+                    "Target": {
+                      "Entity": "TB_acess"
+                    }
+                  },
                   "d_rep": {
                     "Target": {
                       "Entity": "d_rep"
                     }
-                  },
-                  "d_rep.id_vendedor": {
+                  }
+                },
+                "State": "Generated"
+              },
+              "d_rep_has_TB_acss_REP": {
+                "Binding": {
+                  "ConceptualEntity": "D_REP"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "TB_acss_REP"
+                      },
+                      "Subject": {
+                        "Role": "d_rep"
+                      }
+                    },
+                    "ID": "d_reps_have_TB_acss_REPs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "TB_acss_REP": {
                     "Target": {
-                      "Entity": "d_rep.id_vendedor"
+                      "Entity": "TB_acss_REP"
+                    }
+                  },
+                  "d_rep": {
+                    "Target": {
+                      "Entity": "d_rep"
                     }
                   }
                 },
@@ -6538,39 +7339,6 @@
                   "d_rep.representante": {
                     "Target": {
                       "Entity": "d_rep.representante"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "d_rep_has_senha_representante": {
-                "Binding": {
-                  "ConceptualEntity": "D_REP"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha_representante"
-                      },
-                      "Subject": {
-                        "Role": "d_rep"
-                      }
-                    },
-                    "ID": "d_reps_have_senha_representantes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_rep": {
-                    "Target": {
-                      "Entity": "d_rep"
-                    }
-                  },
-                  "senha_representante": {
-                    "Target": {
-                      "Entity": "senha_representante"
                     }
                   }
                 },
@@ -10686,39 +11454,6 @@
                 },
                 "State": "Generated"
               },
-              "valor_senha_has_senha_check": {
-                "Binding": {
-                  "ConceptualEntity": "ValorSenha"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "senha.check"
-                      },
-                      "Subject": {
-                        "Role": "valor_senha"
-                      }
-                    },
-                    "ID": "valor_senhas_have_check",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "senha.check": {
-                    "Target": {
-                      "Entity": "senha.check"
-                    }
-                  },
-                  "valor_senha": {
-                    "Target": {
-                      "Entity": "valor_senha"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "valor_senha_has_valor_ValorSenha": {
                 "Binding": {
                   "ConceptualEntity": "ValorSenha"
@@ -10780,6 +11515,39 @@
                   "valor_senha.valor_senha": {
                     "Target": {
                       "Entity": "valor_senha.valor_senha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "valor_senha_has_x_acesso": {
+                "Binding": {
+                  "ConceptualEntity": "ValorSenha"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "valor_senha.x_acesso"
+                      },
+                      "Subject": {
+                        "Role": "valor_senha"
+                      }
+                    },
+                    "ID": "valor_senhas_have_x_acesso",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "valor_senha": {
+                    "Target": {
+                      "Entity": "valor_senha"
+                    }
+                  },
+                  "valor_senha.x_acesso": {
+                    "Target": {
+                      "Entity": "valor_senha.x_acesso"
                     }
                   }
                 },

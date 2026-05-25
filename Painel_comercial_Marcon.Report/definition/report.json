@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY23SU11",
@@ -79,8 +79,8 @@
           "type": "Image"
         },
         {
-          "name": "Venda_vs_Meta05330832845922184.png",
-          "path": "Venda_vs_Meta05330832845922184.png",
+          "name": "Venda_vs_Meta6733988540215348.png",
+          "path": "Venda_vs_Meta6733988540215348.png",
           "type": "Image"
         }
       ]

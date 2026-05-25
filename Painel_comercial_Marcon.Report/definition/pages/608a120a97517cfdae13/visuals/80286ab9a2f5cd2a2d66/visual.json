@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "80286ab9a2f5cd2a2d66",
   "position": {
     "x": 10.023201856148493,
@@ -106,8 +106,8 @@
                 }
               },
               "queryRef": "_Medidas.TOTAL_METAS",
-              "nativeQueryRef": "Metas",
-              "displayName": "Metas"
+              "nativeQueryRef": "Objetivo",
+              "displayName": "Objetivo"
             },
             {
               "field": {
@@ -135,8 +135,8 @@
                 }
               },
               "queryRef": "_Medidas.META_CARTAO",
-              "nativeQueryRef": "%Meta",
-              "displayName": "%Meta"
+              "nativeQueryRef": "%Obj.",
+              "displayName": "%Obj."
             },
             {
               "field": {
@@ -165,8 +165,8 @@
                 }
               },
               "queryRef": "_Medidas.%TEND",
-              "nativeQueryRef": "% Tend vs Meta",
-              "displayName": "% Tend vs Meta"
+              "nativeQueryRef": "% Tend vs Objetivo",
+              "displayName": "% Tend vs Objetivo"
             }
           ]
         }
@@ -1367,6 +1367,22 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "109.684750036581D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.%TEND"
           }
         }
       ]
